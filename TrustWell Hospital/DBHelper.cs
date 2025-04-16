@@ -6,12 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using data.env;
+
 
 namespace WindowsFormsApp1
 {
     public static class DBHelper
     {
-        private static string connectionString = "server=157.245.99.237;database=hospital11;user=groupAE;password=php@$aelinx_";
+        private static string connectionString = "server=SERVER;database=DATABASE;user=USER;password=PASS";
 
         public static MySqlConnection GetConnection()
         {
