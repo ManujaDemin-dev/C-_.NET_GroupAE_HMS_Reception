@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\trustwell hospital\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|c:\\users\\rog\\source\\repos\\c-_.net_groupae_hms_reception\\trustwell hospital\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|c:\\users\\rog\\source\\repos\\c-_.net_groupae_hms_reception\\trustwell hospital\\data.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\data.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\trustwell hospital\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|c:\\users\\rog\\source\\repos\\c-_.net_groupae_hms_reception\\trustwell hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\trustwell hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -25,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\trustwell hospital\\doctors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\doctors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\trustwell hospital\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\trustwell hospital\\doctors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -82,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,31 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "data.env",
-              "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\data.env",
-              "RelativeDocumentMoniker": "TrustWell Hospital\\data.env",
-              "ToolTip": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\data.env",
-              "RelativeToolTip": "TrustWell Hospital\\data.env",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-16T09:39:55.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "doctors.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\doctors.cs",
-              "RelativeDocumentMoniker": "TrustWell Hospital\\doctors.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\hms\\TrustWell Hospital\\TrustWell Hospital\\doctors.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\User\\Desktop\\hms\\TrustWell Hospital\\TrustWell Hospital\\doctors.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T15:55:12.403Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\Class1.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\Class1.cs",
@@ -126,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "DashboardForm.cs",
               "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\DashboardForm.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\DashboardForm.cs",
@@ -138,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "Appoinmentscs.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\Appoinmentscs.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\Appoinmentscs.cs",
@@ -149,7 +121,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 0,
+              "Title": "DBHelper.cs",
+              "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\DBHelper.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\DBHelper.cs",
+              "ToolTip": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\DBHelper.cs",
+              "RelativeToolTip": "TrustWell Hospital\\DBHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T04:16:45.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "doctors.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\doctors.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\doctors.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\hms\\TrustWell Hospital\\TrustWell Hospital\\doctors.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Desktop\\hms\\TrustWell Hospital\\TrustWell Hospital\\doctors.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T15:55:12.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\App.config",
               "RelativeDocumentMoniker": "TrustWell Hospital\\App.config",
@@ -157,8 +153,7 @@
               "RelativeToolTip": "TrustWell Hospital\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-04-12T08:28:04.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T08:28:04.513Z"
             },
             {
               "$type": "Document",
@@ -169,21 +164,7 @@
               "ToolTip": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\Form1.cs [Design]",
               "RelativeToolTip": "TrustWell Hospital\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T03:43:18.283Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DBHelper.cs",
-              "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\DBHelper.cs",
-              "RelativeDocumentMoniker": "TrustWell Hospital\\DBHelper.cs",
-              "ToolTip": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\DBHelper.cs",
-              "RelativeToolTip": "TrustWell Hospital\\DBHelper.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwAgAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T04:16:45.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T03:43:18.283Z"
             },
             {
               "$type": "Document",
@@ -199,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "doctors.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\doctors.Designer.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\doctors.Designer.cs",
@@ -211,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "AddAppointment.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\AddAppointment.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\AddAppointment.cs",
@@ -222,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "DoctorDetailsPopup.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\DoctorDetailsPopup.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\DoctorDetailsPopup.cs",
@@ -245,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "packages.config",
               "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\packages.config",
               "RelativeDocumentMoniker": "TrustWell Hospital\\packages.config",
@@ -257,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\Form1.Designer.cs",
@@ -269,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "UserSession.cs",
               "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\UserSession.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\UserSession.cs",
@@ -285,14 +266,14 @@
               "Title": "DashboardForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\DashboardForm.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\DashboardForm.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\hms\\TrustWell Hospital\\TrustWell Hospital\\DashboardForm.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\User\\Desktop\\hms\\TrustWell Hospital\\TrustWell Hospital\\DashboardForm.cs [Design]",
+              "ToolTip": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\DashboardForm.cs [Design]",
+              "RelativeToolTip": "TrustWell Hospital\\DashboardForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T06:31:31.685Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\ROG\\source\\repos\\C-_.NET_GroupAE_HMS_Reception\\TrustWell Hospital\\Form1.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\Form1.cs",
