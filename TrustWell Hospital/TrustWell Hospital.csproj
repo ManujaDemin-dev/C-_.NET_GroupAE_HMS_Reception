@@ -107,6 +107,18 @@
     <Compile Include="AddAppointment.Designer.cs">
       <DependentUpon>AddAppointment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Addpatient1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Addpatient1.Designer.cs">
+      <DependentUpon>Addpatient1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addpatients2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Addpatients2.Designer.cs">
+      <DependentUpon>Addpatients2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Appoinmentscs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,11 +154,20 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserSession.cs" />
+    <EmbeddedResource Include="Addpatient1.resx">
+      <DependentUpon>Addpatient1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addpatients2.resx">
+      <DependentUpon>Addpatients2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Appoinmentscs.resx">
       <DependentUpon>Appoinmentscs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorDetailsPopup.resx">
+      <DependentUpon>DoctorDetailsPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="doctors.resx">
       <DependentUpon>doctors.cs</DependentUpon>

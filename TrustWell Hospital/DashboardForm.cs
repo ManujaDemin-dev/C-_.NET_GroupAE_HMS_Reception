@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace TrustWell_Hospital
 {
@@ -19,6 +20,7 @@ namespace TrustWell_Hospital
             InitializeComponent();
             dateTimeDisplay = new DateTimeDisplay(label1, label2);
             this.Doctors.Click += new System.EventHandler(this.Doctors_Click);
+            this.button5.Click += new System.EventHandler(this.button5_Click);
 
 
         }
@@ -41,6 +43,9 @@ namespace TrustWell_Hospital
 
         private void DashboardForm_Load(object sender, EventArgs e)
         {
+           
+            this.label6.Text = $"Welcome, {UserSession.Username}";
+
 
         }
 
@@ -50,6 +55,26 @@ namespace TrustWell_Hospital
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NewAppointment_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new Addpatient1());
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
