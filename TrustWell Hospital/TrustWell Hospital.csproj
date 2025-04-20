@@ -132,7 +132,7 @@
     <Compile Include="DashboardForm.Designer.cs">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DBHelper.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="DoctorDetailsPopup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,9 +151,25 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PatientMiniPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientMiniPage.Designer.cs">
+      <DependentUpon>PatientMiniPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patients1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="patients1.Designer.cs">
+      <DependentUpon>patients1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="publicfunctions.cs" />
     <Compile Include="UserSession.cs" />
+    <EmbeddedResource Include="AddAppointment.resx">
+      <DependentUpon>AddAppointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Addpatient1.resx">
       <DependentUpon>Addpatient1.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +190,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientMiniPage.resx">
+      <DependentUpon>PatientMiniPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patients1.resx">
+      <DependentUpon>patients1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

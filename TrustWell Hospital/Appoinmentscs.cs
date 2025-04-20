@@ -16,5 +16,10 @@ namespace TrustWell_Hospital
         {
             InitializeComponent();
         }
+
+        private void Appoinmentscs_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

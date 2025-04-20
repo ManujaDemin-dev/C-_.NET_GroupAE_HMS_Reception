@@ -44,7 +44,7 @@ namespace TrustWell_Hospital
                 };
 
                 string query = "SELECT * FROM Users WHERE Role = 'Receptionist' AND Email = @Email";
-                DataTable result = DBHelper.ExecuteQuery(query, parameters);
+                DataTable result = Database.ExecuteQuery(query, parameters);
 
                 if (result.Rows.Count == 0)
                 {
@@ -97,7 +97,7 @@ namespace TrustWell_Hospital
                 new MySqlParameter("@StaffID", staffId)
             };
 
-            DBHelper.ExecuteNonQuery(activityQuery, parameters);
+            Database.ExecuteNonQuery(activityQuery, parameters);
         }
         private void label3_Click(object sender, EventArgs e)
         {

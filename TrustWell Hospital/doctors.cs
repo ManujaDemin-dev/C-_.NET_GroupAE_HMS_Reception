@@ -25,7 +25,7 @@ namespace TrustWell_Hospital
         private void FillSpecializationCombo()
         {
             string query = "SELECT DISTINCT Specialization FROM Doctors";
-            DataTable dt = DBHelper.ExecuteQuery(query, null);
+            DataTable dt = Database.ExecuteQuery(query, null);
             cmbSpecialization.Items.Clear();
             cmbSpecialization.Items.Add("All");
 
@@ -44,7 +44,7 @@ namespace TrustWell_Hospital
             LoadDoctorData();
         }
 
-        private void LoadDoctorData()
+        private void LoadDoctorData()  
         {
             string query = "SELECT DoctorID, DoctorName, Specialization FROM Doctors";
             List<MySqlParameter> parameters = new List<MySqlParameter>();
@@ -61,7 +61,7 @@ namespace TrustWell_Hospital
                 parameters.Add(new MySqlParameter("@special", cmbSpecialization.SelectedItem.ToString()));
             }
 
-            DataTable dt = DBHelper.ExecuteQuery(query, parameters.ToArray());
+            DataTable dt = Database.ExecuteQuery(query, parameters.ToArray());
             dataGridView1.Rows.Clear();
             dataGridView1.Columns.Clear();
 

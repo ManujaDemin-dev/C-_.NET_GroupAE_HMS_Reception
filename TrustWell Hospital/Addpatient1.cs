@@ -46,7 +46,7 @@ namespace TrustWell_Hospital
             new MySqlParameter("@nic", patientNIC)
         };
 
-            DataTable dt = DBHelper.ExecuteQuery(query, parameters);
+            DataTable dt = Database.ExecuteQuery(query, parameters);
 
             if (dt.Rows.Count > 0)
             {

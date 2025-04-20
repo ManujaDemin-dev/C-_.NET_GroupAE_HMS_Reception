@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "Appoinmentscs";
             this.Size = new System.Drawing.Size(1656, 896);
+            this.Load += new System.EventHandler(this.Appoinmentscs_Load);
             this.ResumeLayout(false);
 
         }

@@ -21,6 +21,8 @@ namespace TrustWell_Hospital
             dateTimeDisplay = new DateTimeDisplay(label1, label2);
             this.Doctors.Click += new System.EventHandler(this.Doctors_Click);
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+
 
 
         }
@@ -38,6 +40,7 @@ namespace TrustWell_Hospital
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            LoadUserControl(new patients1());
 
         }
 
@@ -78,5 +81,31 @@ namespace TrustWell_Hospital
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+        private void Doctors_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

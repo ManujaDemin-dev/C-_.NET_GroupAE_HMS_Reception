@@ -106,6 +106,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Log out";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button6
             // 
@@ -143,6 +144,8 @@
             // 
             // Doctors
             // 
+            this.Doctors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(40)))));
+            this.Doctors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Doctors.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Doctors.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Doctors.Location = new System.Drawing.Point(3, 351);
@@ -150,7 +153,8 @@
             this.Doctors.Size = new System.Drawing.Size(240, 65);
             this.Doctors.TabIndex = 8;
             this.Doctors.Text = "Doctors";
-            this.Doctors.UseVisualStyleBackColor = true;
+            this.Doctors.UseVisualStyleBackColor = false;
+            this.Doctors.Click += new System.EventHandler(this.Doctors_Click_1);
             // 
             // NewAppointment
             // 

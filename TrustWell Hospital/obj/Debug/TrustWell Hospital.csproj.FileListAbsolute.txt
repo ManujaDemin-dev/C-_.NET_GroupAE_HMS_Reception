@@ -97,3 +97,6 @@ C:\Users\ROG\Source\Repos\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\obj\D
 C:\Users\User\Desktop\hms\TrustWell Hospital\TrustWell Hospital\obj\Debug\TrustWell_Hospital.Addpatient1.resources
 C:\Users\User\Desktop\hms\TrustWell Hospital\TrustWell Hospital\obj\Debug\TrustWell_Hospital.Addpatients2.resources
 C:\Users\User\Desktop\hms\TrustWell Hospital\TrustWell Hospital\obj\Debug\TrustWell_Hospital.DoctorDetailsPopup.resources
+C:\Users\User\Desktop\hms\TrustWell Hospital\TrustWell Hospital\obj\Debug\TrustWell_Hospital.PatientMiniPage.resources
+C:\Users\User\Desktop\hms\TrustWell Hospital\TrustWell Hospital\obj\Debug\TrustWell_Hospital.patients1.resources
+C:\Users\User\Desktop\hms\TrustWell Hospital\TrustWell Hospital\obj\Debug\TrustWell_Hospital.AddAppointment.resources

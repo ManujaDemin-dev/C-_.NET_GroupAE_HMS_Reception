@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 
 namespace WindowsFormsApp1
 {
-    public static class DBHelper
+    public static class Database
     {
         private static string connectionString = "server=157.245.99.237;database=hospital11;user=groupAE;password=php@$aelinx_";
 
