@@ -38,50 +38,55 @@
             this.Specialization = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addappoinment = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.view = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(229, 75);
+            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(229, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 16);
+            this.label1.Size = new System.Drawing.Size(122, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Doctor Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(640, 74);
+            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.label2.Location = new System.Drawing.Point(610, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 16);
+            this.label2.Size = new System.Drawing.Size(129, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Specialization";
             // 
             // txtDoctorName
             // 
-            this.txtDoctorName.Location = new System.Drawing.Point(232, 110);
+            this.txtDoctorName.Location = new System.Drawing.Point(232, 108);
             this.txtDoctorName.Name = "txtDoctorName";
-            this.txtDoctorName.Size = new System.Drawing.Size(156, 22);
+            this.txtDoctorName.Size = new System.Drawing.Size(295, 22);
             this.txtDoctorName.TabIndex = 2;
             // 
             // cmbSpecialization
             // 
             this.cmbSpecialization.FormattingEnabled = true;
-            this.cmbSpecialization.Location = new System.Drawing.Point(655, 110);
+            this.cmbSpecialization.Location = new System.Drawing.Point(611, 106);
             this.cmbSpecialization.Name = "cmbSpecialization";
-            this.cmbSpecialization.Size = new System.Drawing.Size(204, 24);
+            this.cmbSpecialization.Size = new System.Drawing.Size(333, 24);
             this.cmbSpecialization.TabIndex = 3;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(1060, 109);
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(248)))));
+            this.btnSearch.Location = new System.Drawing.Point(992, 107);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(106, 24);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // dataGridView1
@@ -92,7 +97,7 @@
             this.Specialization,
             this.addappoinment,
             this.view});
-            this.dataGridView1.Location = new System.Drawing.Point(20, 162);
+            this.dataGridView1.Location = new System.Drawing.Point(75, 163);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -128,10 +133,23 @@
             this.view.Name = "view";
             this.view.Width = 125;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.label3.Location = new System.Drawing.Point(701, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(158, 22);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Doctors Deatails";
+            // 
             // doctors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(248)))));
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.cmbSpecialization);
@@ -159,5 +177,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Specialization;
         private System.Windows.Forms.DataGridViewTextBoxColumn addappoinment;
         private System.Windows.Forms.DataGridViewTextBoxColumn view;
+        private System.Windows.Forms.Label label3;
     }
 }
