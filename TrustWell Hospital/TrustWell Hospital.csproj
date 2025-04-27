@@ -151,6 +151,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Labbill1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labbill1.Designer.cs">
+      <DependentUpon>Labbill1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabPayment1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabPayment1.Designer.cs">
+      <DependentUpon>LabPayment1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labpayment2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labpayment2.Designer.cs">
+      <DependentUpon>Labpayment2.cs</DependentUpon>
+    </Compile>
     <Compile Include="PatientMiniPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +209,15 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Labbill1.resx">
+      <DependentUpon>Labbill1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabPayment1.resx">
+      <DependentUpon>LabPayment1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labpayment2.resx">
+      <DependentUpon>Labpayment2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PatientMiniPage.resx">
       <DependentUpon>PatientMiniPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +232,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -219,6 +247,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
