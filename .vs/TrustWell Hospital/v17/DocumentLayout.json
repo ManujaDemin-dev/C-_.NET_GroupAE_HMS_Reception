@@ -2,6 +2,7 @@
   "Version": 1,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "WorkspaceRootPath": "C:\\reception\\",
   "Documents": [
     {
@@ -442,6 +443,160 @@
     {
       "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
 >>>>>>> Stashed changes
+=======
+  "WorkspaceRootPath": "C:\\receptionist\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|c:\\receptionist\\trustwell hospital\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\labbill1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\labbill1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\labbill1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\labbill1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\labpayment2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\labpayment2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\labpayment1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\labpayment1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\labpayment1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\labpayment1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\patients1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\patients1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\patients1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\patients1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\labpayment2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\labpayment2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\addpatients2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\addpatients2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\addpatient1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\addpatient1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\appoinmentscs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\appoinmentscs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\doctordetailspopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\doctordetailspopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\addappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\addappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\appoinmentscs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\appoinmentscs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\patientminipage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\patientminipage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\publicfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\publicfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\patientminipage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\patientminipage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\doctors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\doctors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\addappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\addappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\addpatient1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\addpatient1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\addpatients2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\addpatients2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\doctordetailspopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\doctordetailspopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\doctors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\doctors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\patients1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\patients1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\patients1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\patients1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\dashboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\dashboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\doctors.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\doctors.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\appoinmentscs.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\appoinmentscs.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|C:\\receptionist\\trustwell hospital\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{B21DF1C5-ED87-47BF-AE1B-242F7EF1EF26}|TrustWell Hospital\\TrustWell Hospital.csproj|solutionrelative:trustwell hospital\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -460,6 +615,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "DocumentIndex": 4,
@@ -635,6 +791,59 @@
               "RelativeDocumentMoniker": "TrustWell Hospital\\patients1.cs",
               "ToolTip": "C:\\receptionist\\TrustWell Hospital\\patients1.cs",
 >>>>>>> Stashed changes
+=======
+              "DocumentIndex": 3,
+              "Title": "Labbill1.cs",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\Labbill1.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\Labbill1.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\Labbill1.cs",
+              "RelativeToolTip": "TrustWell Hospital\\Labbill1.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T18:13:14.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LabPayment1.cs",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\LabPayment1.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\LabPayment1.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\LabPayment1.cs",
+              "RelativeToolTip": "TrustWell Hospital\\LabPayment1.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T17:41:38.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Labbill1.cs [Design]",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\Labbill1.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\Labbill1.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\Labbill1.cs [Design]",
+              "RelativeToolTip": "TrustWell Hospital\\Labbill1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T17:09:25.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LabPayment1.cs [Design]",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\LabPayment1.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\LabPayment1.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\LabPayment1.cs [Design]",
+              "RelativeToolTip": "TrustWell Hospital\\LabPayment1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T16:47:08.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "patients1.cs",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\patients1.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\patients1.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\patients1.cs",
+>>>>>>> Stashed changes
               "RelativeToolTip": "TrustWell Hospital\\patients1.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAnwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -642,6 +851,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "DocumentIndex": 8,
@@ -672,6 +882,20 @@
             },
             {
               "$type": "Document",
+=======
+              "DocumentIndex": 0,
+              "Title": "DashboardForm.cs [Design]",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\DashboardForm.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\DashboardForm.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\DashboardForm.cs [Design]*",
+              "RelativeToolTip": "TrustWell Hospital\\DashboardForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T06:31:31.685Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 0,
               "Title": "DashboardForm.cs [Design]",
@@ -774,6 +998,9 @@
               "ToolTip": "C:\\Users\\User\\Desktop\\hms\\TrustWell Hospital\\TrustWell Hospital\\Appoinmentscs.cs [Design]",
               "RelativeToolTip": "..\\Users\\User\\Desktop\\hms\\TrustWell Hospital\\TrustWell Hospital\\Appoinmentscs.cs [Design]",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -782,6 +1009,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "DocumentIndex": 5,
@@ -796,11 +1024,18 @@
               "DocumentIndex": 14,
               "Title": "Form1.cs [Design]",
 >>>>>>> Stashed changes
+=======
+              "DocumentIndex": 14,
+              "Title": "Form1.cs [Design]",
+>>>>>>> Stashed changes
               "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\Form1.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\Form1.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\hms\\TrustWell Hospital\\TrustWell Hospital\\Form1.cs [Design]",
               "RelativeToolTip": "..\\Users\\User\\Desktop\\hms\\TrustWell Hospital\\TrustWell Hospital\\Form1.cs [Design]",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -809,6 +1044,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "DocumentIndex": 6,
@@ -848,6 +1084,11 @@
               "Title": "DoctorDetailsPopup.cs [Design]",
               "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\DoctorDetailsPopup.cs",
 >>>>>>> Stashed changes
+=======
+              "DocumentIndex": 15,
+              "Title": "DoctorDetailsPopup.cs [Design]",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\DoctorDetailsPopup.cs",
+>>>>>>> Stashed changes
               "RelativeDocumentMoniker": "TrustWell Hospital\\DoctorDetailsPopup.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\hms\\TrustWell Hospital\\TrustWell Hospital\\DoctorDetailsPopup.cs [Design]",
               "RelativeToolTip": "..\\Users\\User\\Desktop\\hms\\TrustWell Hospital\\TrustWell Hospital\\DoctorDetailsPopup.cs [Design]",
@@ -858,9 +1099,15 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 12,
               "Title": "AddAppointment.cs [Design]",
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\AddAppointment.cs",
+=======
+              "DocumentIndex": 16,
+              "Title": "AddAppointment.cs [Design]",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\AddAppointment.cs",
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 16,
               "Title": "AddAppointment.cs [Design]",
@@ -879,6 +1126,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "DocumentIndex": 13,
@@ -913,6 +1161,13 @@
               "RelativeDocumentMoniker": "TrustWell Hospital\\Appoinmentscs.cs",
               "ToolTip": "C:\\receptionist\\TrustWell Hospital\\Appoinmentscs.cs",
 >>>>>>> Stashed changes
+=======
+              "DocumentIndex": 17,
+              "Title": "Appoinmentscs.cs",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\Appoinmentscs.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\Appoinmentscs.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\Appoinmentscs.cs",
+>>>>>>> Stashed changes
               "RelativeToolTip": "TrustWell Hospital\\Appoinmentscs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -922,9 +1177,15 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 15,
               "Title": "PatientMiniPage.cs [Design]",
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\PatientMiniPage.cs",
+=======
+              "DocumentIndex": 18,
+              "Title": "PatientMiniPage.cs [Design]",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\PatientMiniPage.cs",
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 18,
               "Title": "PatientMiniPage.cs [Design]",
@@ -945,11 +1206,19 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 16,
               "Title": "publicfunctions.cs",
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\publicfunctions.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\publicfunctions.cs",
               "ToolTip": "C:\\reception\\TrustWell Hospital\\publicfunctions.cs",
+=======
+              "DocumentIndex": 19,
+              "Title": "publicfunctions.cs",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\publicfunctions.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\publicfunctions.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\publicfunctions.cs",
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 19,
               "Title": "publicfunctions.cs",
@@ -973,11 +1242,19 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 17,
               "Title": "App.config",
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\App.config",
               "RelativeDocumentMoniker": "TrustWell Hospital\\App.config",
               "ToolTip": "C:\\reception\\TrustWell Hospital\\App.config",
+=======
+              "DocumentIndex": 20,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\App.config",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\App.config",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\App.config",
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 20,
               "Title": "App.config",
@@ -999,6 +1276,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "DocumentIndex": 18,
@@ -1032,6 +1310,13 @@
               "RelativeDocumentMoniker": "TrustWell Hospital\\PatientMiniPage.cs",
               "ToolTip": "C:\\receptionist\\TrustWell Hospital\\PatientMiniPage.cs",
 >>>>>>> Stashed changes
+=======
+              "DocumentIndex": 21,
+              "Title": "PatientMiniPage.cs",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\PatientMiniPage.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\PatientMiniPage.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\PatientMiniPage.cs",
+>>>>>>> Stashed changes
               "RelativeToolTip": "TrustWell Hospital\\PatientMiniPage.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAqwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1041,9 +1326,15 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 20,
               "Title": "doctors.cs [Design]",
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\doctors.cs",
+=======
+              "DocumentIndex": 22,
+              "Title": "doctors.cs [Design]",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\doctors.cs",
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 22,
               "Title": "doctors.cs [Design]",
@@ -1064,11 +1355,19 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 21,
               "Title": "AddAppointment.cs",
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\AddAppointment.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\AddAppointment.cs",
               "ToolTip": "C:\\reception\\TrustWell Hospital\\AddAppointment.cs",
+=======
+              "DocumentIndex": 23,
+              "Title": "AddAppointment.cs",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\AddAppointment.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\AddAppointment.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\AddAppointment.cs",
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 23,
               "Title": "AddAppointment.cs",
@@ -1092,12 +1391,15 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 22,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\Class1.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\Class1.cs",
               "ToolTip": "C:\\reception\\TrustWell Hospital\\Class1.cs",
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
               "DocumentIndex": 24,
@@ -1130,6 +1432,9 @@
               "RelativeDocumentMoniker": "TrustWell Hospital\\Class1.cs",
               "ToolTip": "C:\\receptionist\\TrustWell Hospital\\Class1.cs",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1142,11 +1447,19 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 23,
               "Title": "DoctorDetailsPopup.cs",
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\DoctorDetailsPopup.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\DoctorDetailsPopup.cs",
               "ToolTip": "C:\\reception\\TrustWell Hospital\\DoctorDetailsPopup.cs",
+=======
+              "DocumentIndex": 27,
+              "Title": "DoctorDetailsPopup.cs",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\DoctorDetailsPopup.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\DoctorDetailsPopup.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\DoctorDetailsPopup.cs",
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 27,
               "Title": "DoctorDetailsPopup.cs",
@@ -1170,11 +1483,19 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 24,
               "Title": "doctors.cs",
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\doctors.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\doctors.cs",
               "ToolTip": "C:\\reception\\TrustWell Hospital\\doctors.cs",
+=======
+              "DocumentIndex": 28,
+              "Title": "doctors.cs",
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\doctors.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\doctors.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\doctors.cs",
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 28,
               "Title": "doctors.cs",
@@ -1198,12 +1519,15 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 25,
               "Title": "packages.config",
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\packages.config",
               "RelativeDocumentMoniker": "TrustWell Hospital\\packages.config",
               "ToolTip": "C:\\reception\\TrustWell Hospital\\packages.config",
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
               "DocumentIndex": 29,
@@ -1224,6 +1548,9 @@
               "RelativeDocumentMoniker": "TrustWell Hospital\\packages.config",
               "ToolTip": "C:\\receptionist\\TrustWell Hospital\\packages.config",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1238,9 +1565,15 @@
               "Title": "UserSession.cs",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\UserSession.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\UserSession.cs",
               "ToolTip": "C:\\reception\\TrustWell Hospital\\UserSession.cs",
+=======
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\UserSession.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\UserSession.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\UserSession.cs",
+>>>>>>> Stashed changes
 =======
               "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\UserSession.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\UserSession.cs",
@@ -1262,9 +1595,15 @@
               "Title": "patients1.Designer.cs",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\patients1.Designer.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\patients1.Designer.cs",
               "ToolTip": "C:\\reception\\TrustWell Hospital\\patients1.Designer.cs",
+=======
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\patients1.Designer.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\patients1.Designer.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\patients1.Designer.cs",
+>>>>>>> Stashed changes
 =======
               "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\patients1.Designer.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\patients1.Designer.cs",
@@ -1286,9 +1625,15 @@
               "Title": "patients1.resx",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\patients1.resx",
               "RelativeDocumentMoniker": "TrustWell Hospital\\patients1.resx",
               "ToolTip": "C:\\reception\\TrustWell Hospital\\patients1.resx",
+=======
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\patients1.resx",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\patients1.resx",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\patients1.resx",
+>>>>>>> Stashed changes
 =======
               "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\patients1.resx",
               "RelativeDocumentMoniker": "TrustWell Hospital\\patients1.resx",
@@ -1309,9 +1654,15 @@
               "Title": "Appoinmentscs.Designer.cs",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\Appoinmentscs.Designer.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\Appoinmentscs.Designer.cs",
               "ToolTip": "C:\\reception\\TrustWell Hospital\\Appoinmentscs.Designer.cs",
+=======
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\Appoinmentscs.Designer.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\Appoinmentscs.Designer.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\Appoinmentscs.Designer.cs",
+>>>>>>> Stashed changes
 =======
               "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\Appoinmentscs.Designer.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\Appoinmentscs.Designer.cs",
@@ -1333,10 +1684,17 @@
               "Title": "DashboardForm.Designer.cs",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\DashboardForm.Designer.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\DashboardForm.Designer.cs",
               "ToolTip": "C:\\reception\\TrustWell Hospital\\DashboardForm.Designer.cs",
               "RelativeToolTip": "TrustWell Hospital\\DashboardForm.Designer.cs",
+=======
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\DashboardForm.Designer.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\DashboardForm.Designer.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\DashboardForm.Designer.cs*",
+              "RelativeToolTip": "TrustWell Hospital\\DashboardForm.Designer.cs*",
+>>>>>>> Stashed changes
 =======
               "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\DashboardForm.Designer.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\DashboardForm.Designer.cs",
@@ -1360,9 +1718,15 @@
               "Title": "doctors.Designer.cs",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\doctors.Designer.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\doctors.Designer.cs",
               "ToolTip": "C:\\reception\\TrustWell Hospital\\doctors.Designer.cs",
+=======
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\doctors.Designer.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\doctors.Designer.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\doctors.Designer.cs",
+>>>>>>> Stashed changes
 =======
               "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\doctors.Designer.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\doctors.Designer.cs",
@@ -1384,9 +1748,15 @@
               "Title": "Form1.Designer.cs",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\reception\\TrustWell Hospital\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\Form1.Designer.cs",
               "ToolTip": "C:\\reception\\TrustWell Hospital\\Form1.Designer.cs",
+=======
+              "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "TrustWell Hospital\\Form1.Designer.cs",
+              "ToolTip": "C:\\receptionist\\TrustWell Hospital\\Form1.Designer.cs",
+>>>>>>> Stashed changes
 =======
               "DocumentMoniker": "C:\\receptionist\\TrustWell Hospital\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "TrustWell Hospital\\Form1.Designer.cs",
