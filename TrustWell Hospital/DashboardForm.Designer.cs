@@ -388,7 +388,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         private System.Windows.Forms.Label label9;
+=======
+        private System.Windows.Forms.Button button7;
+>>>>>>> Stashed changes
 =======
         private System.Windows.Forms.Button button7;
 >>>>>>> Stashed changes

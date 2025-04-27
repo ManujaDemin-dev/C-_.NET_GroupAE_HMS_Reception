@@ -103,6 +103,7 @@ C:\Users\User\Desktop\hms\TrustWell Hospital\TrustWell Hospital\obj\Debug\TrustW
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 D:\groupAE-hms\TrustWell Hospital\bin\Debug\TrustWell Hospital.exe.config
 D:\groupAE-hms\TrustWell Hospital\bin\Debug\TrustWell Hospital.exe
 D:\groupAE-hms\TrustWell Hospital\bin\Debug\TrustWell Hospital.pdb
@@ -216,6 +217,8 @@ C:\reception\TrustWell Hospital\obj\Debug\TrustWell Hospital.pdb
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 C:\receptionist\TrustWell Hospital\bin\Debug\TrustWell Hospital.exe.config
 C:\receptionist\TrustWell Hospital\bin\Debug\TrustWell Hospital.exe
 C:\receptionist\TrustWell Hospital\bin\Debug\TrustWell Hospital.pdb
@@ -275,6 +278,9 @@ C:\receptionist\TrustWell Hospital\obj\Debug\TrustWell_Hospital.Labpayment2.reso
 C:\receptionist\TrustWell Hospital\obj\Debug\TrustWell_Hospital.Labbill1.resources
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
