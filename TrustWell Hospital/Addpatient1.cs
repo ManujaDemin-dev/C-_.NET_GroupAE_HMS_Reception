@@ -51,7 +51,8 @@ namespace TrustWell_Hospital
             if (dt.Rows.Count > 0)
             {
                 string existingPatientName = dt.Rows[0]["patientName"].ToString();
-                label3.Text = "This patient is already registered. Name: " + existingPatientName;
+                label3.ForeColor = Color.Red;
+                label3.Text = "This patient is already registered. \nName: " + existingPatientName;
                 existingPatientName = patientName;
             }
             else
