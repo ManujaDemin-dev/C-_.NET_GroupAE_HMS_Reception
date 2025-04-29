@@ -22,7 +22,6 @@ namespace TrustWell_Hospital
             this.Doctors.Click += new System.EventHandler(this.Doctors_Click);
             this.button5.Click += new System.EventHandler(this.button5_Click);
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button7.Click += new System.EventHandler(this.button7_Click);
 
 
 
