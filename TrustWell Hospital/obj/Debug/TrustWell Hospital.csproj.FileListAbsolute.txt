@@ -365,3 +365,21 @@ D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\obj\Debug\Trus
 D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\obj\Debug\TrustWel.21714CDE.Up2Date
 D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\obj\Debug\TrustWell Hospital.exe
 D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\obj\Debug\TrustWell Hospital.pdb
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\BCrypt.Net-Next.dll
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\BouncyCastle.Cryptography.dll
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\Google.Protobuf.dll
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\Guna.UI.dll
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\K4os.Compression.LZ4.dll
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\K4os.Hash.xxHash.dll
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\MySql.Data.dll
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\System.IO.Pipelines.dll
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\ZstdSharp.dll
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\System.Buffers.xml
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\System.Memory.xml
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\System.Numerics.Vectors.xml
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\group_net_hms\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\System.Threading.Tasks.Extensions.xml
