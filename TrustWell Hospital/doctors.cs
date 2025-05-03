@@ -117,5 +117,10 @@ namespace TrustWell_Hospital
         {
 
         }
+
+        private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
