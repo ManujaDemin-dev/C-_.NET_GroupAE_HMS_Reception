@@ -118,5 +118,10 @@ namespace TrustWell_Hospital
         {
             LoadUserControl(new LabPayment1());
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
