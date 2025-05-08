@@ -36,7 +36,6 @@ namespace TrustWell_Hospital
 
         private void Doctors_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new doctors());
         }
         private void button2_Click(object sender, EventArgs e)
         {
