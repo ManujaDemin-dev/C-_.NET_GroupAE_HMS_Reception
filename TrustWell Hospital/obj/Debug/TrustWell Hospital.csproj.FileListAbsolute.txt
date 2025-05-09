@@ -440,3 +440,5 @@ D:\net_reception\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\Syst
 D:\net_reception\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\net_reception\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\obj\Debug\TrustWel.21714CDE.Up2Date
 D:\net_reception\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\Guna.UI.dll
+C:\Group AE\new\TrustWell Hospital\obj\Debug\TrustWell_Hospital.appointment_doc.resources
+C:\Group AE\new\TrustWell Hospital\obj\Debug\TrustWell_Hospital.view_btn_doc.resources

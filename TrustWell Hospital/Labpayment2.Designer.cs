@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.btnsearch = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Checkout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,42 +48,43 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Search Test Name  :";
             // 
-            // textBox1
+            // txtname
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(424, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(243, 30);
-            this.textBox1.TabIndex = 1;
+            this.txtname.AcceptsReturn = true;
+            this.txtname.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtname.Location = new System.Drawing.Point(424, 50);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(243, 30);
+            this.txtname.TabIndex = 1;
             // 
-            // button1
+            // btnsearch
             // 
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(654, 110);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 36);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnsearch.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsearch.Location = new System.Drawing.Point(654, 110);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(75, 36);
+            this.btnsearch.TabIndex = 2;
+            this.btnsearch.Text = "search";
+            this.btnsearch.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(46, 181);
+            this.dataGridView1.Location = new System.Drawing.Point(69, 183);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1074, 403);
             this.dataGridView1.TabIndex = 3;
             // 
-            // button2
+            // Checkout
             // 
-            this.button2.Location = new System.Drawing.Point(979, 613);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 48);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Checkout";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Checkout.Location = new System.Drawing.Point(979, 613);
+            this.Checkout.Name = "Checkout";
+            this.Checkout.Size = new System.Drawing.Size(99, 48);
+            this.Checkout.TabIndex = 4;
+            this.Checkout.Text = "Checkout";
+            this.Checkout.UseVisualStyleBackColor = true;
             // 
             // Labpayment2
             // 
@@ -91,10 +92,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1182, 673);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Checkout);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnsearch);
+            this.Controls.Add(this.txtname);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -113,9 +114,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Checkout;
     }
 }
