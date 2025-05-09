@@ -75,6 +75,9 @@ namespace TrustWell_Hospital
             }
         }
 
+        private void txtname_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

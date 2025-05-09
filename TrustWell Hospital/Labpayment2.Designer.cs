@@ -56,6 +56,7 @@
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(243, 30);
             this.txtname.TabIndex = 1;
+            this.txtname.TextChanged += new System.EventHandler(this.txtname_TextChanged);
             // 
             // btnsearch
             // 
