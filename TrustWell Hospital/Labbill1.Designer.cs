@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,28 +40,29 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtRefNo = new System.Windows.Forms.TextBox();
+            this.txtPatientNo = new System.Windows.Forms.TextBox();
+            this.txtDateTime = new System.Windows.Forms.TextBox();
+            this.txtPatientName = new System.Windows.Forms.TextBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.txtBillSummary = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnPrint
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(816, 693);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 39);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Bill Print";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrint.Location = new System.Drawing.Point(816, 693);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(120, 39);
+            this.btnPrint.TabIndex = 1;
+            this.btnPrint.Text = "Bill Print";
+            this.btnPrint.UseVisualStyleBackColor = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // pictureBox1
             // 
@@ -154,12 +156,12 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.txtBillSummary);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtRefNo);
+            this.panel1.Controls.Add(this.txtPatientNo);
+            this.panel1.Controls.Add(this.txtDateTime);
+            this.panel1.Controls.Add(this.txtPatientName);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -174,16 +176,6 @@
             this.panel1.Size = new System.Drawing.Size(700, 649);
             this.panel1.TabIndex = 0;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(88, 400);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(525, 223);
-            this.dataGridView1.TabIndex = 19;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -194,44 +186,62 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Lab Payment Bill";
             // 
-            // textBox4
+            // txtRefNo
             // 
-            this.textBox4.Location = new System.Drawing.Point(217, 279);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(189, 22);
-            this.textBox4.TabIndex = 17;
+            this.txtRefNo.Location = new System.Drawing.Point(217, 279);
+            this.txtRefNo.Name = "txtRefNo";
+            this.txtRefNo.Size = new System.Drawing.Size(189, 22);
+            this.txtRefNo.TabIndex = 17;
             // 
-            // textBox3
+            // txtPatientNo
             // 
-            this.textBox3.Location = new System.Drawing.Point(217, 311);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(189, 22);
-            this.textBox3.TabIndex = 16;
+            this.txtPatientNo.Location = new System.Drawing.Point(217, 311);
+            this.txtPatientNo.Name = "txtPatientNo";
+            this.txtPatientNo.Size = new System.Drawing.Size(189, 22);
+            this.txtPatientNo.TabIndex = 16;
             // 
-            // textBox2
+            // txtDateTime
             // 
-            this.textBox2.Location = new System.Drawing.Point(217, 346);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 22);
-            this.textBox2.TabIndex = 15;
+            this.txtDateTime.Location = new System.Drawing.Point(217, 346);
+            this.txtDateTime.Name = "txtDateTime";
+            this.txtDateTime.ReadOnly = true;
+            this.txtDateTime.Size = new System.Drawing.Size(189, 22);
+            this.txtDateTime.TabIndex = 15;
             // 
-            // textBox1
+            // txtPatientName
             // 
-            this.textBox1.Location = new System.Drawing.Point(217, 245);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 22);
-            this.textBox1.TabIndex = 14;
+            this.txtPatientName.Location = new System.Drawing.Point(217, 245);
+            this.txtPatientName.Name = "txtPatientName";
+            this.txtPatientName.Size = new System.Drawing.Size(191, 22);
+            this.txtPatientName.TabIndex = 14;
             // 
-            // button2
+            // btnCancel
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(635, 693);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 39);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(635, 693);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(120, 39);
+            this.btnCancel.TabIndex = 2;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // txtBillSummary
+            // 
+            this.txtBillSummary.Location = new System.Drawing.Point(162, 415);
+            this.txtBillSummary.Multiline = true;
+            this.txtBillSummary.Name = "txtBillSummary";
+            this.txtBillSummary.ReadOnly = true;
+            this.txtBillSummary.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtBillSummary.Size = new System.Drawing.Size(434, 199);
+            this.txtBillSummary.TabIndex = 19;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Labbill1
             // 
@@ -239,8 +249,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(982, 744);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -248,16 +258,16 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Labbill1";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -268,12 +278,13 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtRefNo;
+        private System.Windows.Forms.TextBox txtPatientNo;
+        private System.Windows.Forms.TextBox txtDateTime;
+        private System.Windows.Forms.TextBox txtPatientName;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TextBox txtBillSummary;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
