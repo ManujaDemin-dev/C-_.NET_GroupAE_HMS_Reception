@@ -66,7 +66,6 @@
             this.btnPrint.Text = "Bill Print";
             this.btnPrint.UseVisualStyleBackColor = false;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
-            this.btnPrint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnPrint_MouseClick);
             // 
             // pictureBox1
             // 
@@ -97,7 +96,6 @@
             this.label2.Size = new System.Drawing.Size(163, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Pitipana,Homagama.";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -108,7 +106,6 @@
             this.label3.Size = new System.Drawing.Size(148, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "www.trustwell.com";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -119,7 +116,7 @@
             this.label4.Size = new System.Drawing.Size(165, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "Tel no :001 778 0099";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            
             // 
             // label5
             // 
@@ -182,7 +179,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(700, 649);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtBillSummary
             // 
@@ -254,7 +250,7 @@
             // 
             // printDocument1
             // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+
             // 
             // printPreviewDialog1
             // 
@@ -265,7 +261,7 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
-            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
+            
             // 
             // Labbill1
             // 

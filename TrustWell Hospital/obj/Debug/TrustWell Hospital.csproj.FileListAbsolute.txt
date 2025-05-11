@@ -501,3 +501,5 @@ D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell Hospital.csproj.CoreC
 D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWel.21714CDE.Up2Date
 D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell Hospital.exe
 D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell Hospital.pdb
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\itextsharp.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\itextsharp.xml
