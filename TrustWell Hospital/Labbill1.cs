@@ -15,31 +15,51 @@ namespace TrustWell_Hospital
         //store the selected test details
         private List<(int TestID, string TestName, decimal TestPrice)> selectedTests;
         //constructor that receives from the other form
-        public Labbill1(List<(int TestID, string TestName, decimal TestPrice)> selectedTests)
+        private string patientName;
+        private string referenceNo;
+        private string contactNumber;
+
+        public Labbill1(List<(int TestID, string TestName, decimal TestPrice)> selectedTests, string patientName, string referenceNo, string contactNumber)
         {
             InitializeComponent();
-            this.selectedTests=selectedTests;
+            this.selectedTests = selectedTests;
+            this.patientName = patientName;
+            this.referenceNo = referenceNo;
+            this.contactNumber = contactNumber;
+
             this.Load += Labbill_Load;
             btnCancel.Click += btnCancel_Click;
             btnPrint.Click += btnPrint_Click;
         }
+
         private void Labbill_Load(object sender, EventArgs e)
         {
-            txtDateTime.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");//Date setting and time 
+            txtDateTime.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
-            string summary = "";
+            StringBuilder summary = new StringBuilder();
+            summary.AppendLine("======= LAB TEST BILL =======");
+            summary.AppendLine($"Date: {DateTime.Now:yyyy-MM-dd HH:mm:ss}");
+            summary.AppendLine($"Patient Name: {patientName}");
+            summary.AppendLine($"Reference No: {referenceNo}");
+            summary.AppendLine($"Contact No: {contactNumber}");
+            summary.AppendLine("-----------------------------");
+            summary.AppendLine("Tests:");
+
             decimal total = 0;
-
             foreach (var test in selectedTests)
             {
-                summary  += test.TestName + " - Rs. " + test.TestPrice.ToString("N2") + "\n";//N2 means need decimal points
+                summary.AppendLine($"{test.TestName} - Rs. {test.TestPrice:N2}");
                 total += test.TestPrice;
             }
 
-            summary += "\nTotal Price: Rs." +total.ToString("N2");
+            summary.AppendLine("-----------------------------");
+            summary.AppendLine($"Total Price: Rs. {total:N2}");
+            summary.AppendLine("=============================");
 
-            txtBillSummary.Text = summary;
+            txtBillSummary.Text = summary.ToString();
         }
+
+        
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();

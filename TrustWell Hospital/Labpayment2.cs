@@ -14,14 +14,19 @@ namespace TrustWell_Hospital
     {
         private List<(int TestID, string TestName, decimal TestPrice)> selectedTests = new List<(int, string, decimal)>();
 
-        public Labpayment2()
+        private string patientName;
+        private string referenceNo;
+        private string contactNumber;
+
+        public Labpayment2(string patientName, string referenceNo, string contactNumber)
         {
             InitializeComponent();
-            LoadLabpayment2();
-            this.btnsearch.Click += new System.EventHandler(this.button1_search);
-            this.Checkout.Click += new System.EventHandler(this.Checkout_Click);
-            this.dataGridView1.CellContentClick += new DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.patientName = patientName;
+            this.referenceNo = referenceNo;
+            this.contactNumber = contactNumber;
+            // existing code
         }
+
 
         private void Labpayment2_Load(object sender, EventArgs e) { }
 
@@ -89,10 +94,10 @@ namespace TrustWell_Hospital
                 return;
             }
 
-            Labbill1 billForm = new Labbill1(selectedTests);
+            Labbill1 billForm = new Labbill1(selectedTests, patientName, referenceNo, contactNumber);
             billForm.StartPosition = FormStartPosition.CenterScreen;
             billForm.ShowDialog();
-            this.Hide();
+
         }
     }
 }

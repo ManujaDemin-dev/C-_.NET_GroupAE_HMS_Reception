@@ -40,13 +40,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtBillSummary = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtRefNo = new System.Windows.Forms.TextBox();
             this.txtPatientNo = new System.Windows.Forms.TextBox();
             this.txtDateTime = new System.Windows.Forms.TextBox();
             this.txtPatientName = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.txtBillSummary = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -176,6 +176,16 @@
             this.panel1.Size = new System.Drawing.Size(700, 649);
             this.panel1.TabIndex = 0;
             // 
+            // txtBillSummary
+            // 
+            this.txtBillSummary.Location = new System.Drawing.Point(162, 415);
+            this.txtBillSummary.Multiline = true;
+            this.txtBillSummary.Name = "txtBillSummary";
+            this.txtBillSummary.ReadOnly = true;
+            this.txtBillSummary.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtBillSummary.Size = new System.Drawing.Size(371, 199);
+            this.txtBillSummary.TabIndex = 19;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -226,16 +236,6 @@
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // txtBillSummary
-            // 
-            this.txtBillSummary.Location = new System.Drawing.Point(162, 415);
-            this.txtBillSummary.Multiline = true;
-            this.txtBillSummary.Name = "txtBillSummary";
-            this.txtBillSummary.ReadOnly = true;
-            this.txtBillSummary.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtBillSummary.Size = new System.Drawing.Size(434, 199);
-            this.txtBillSummary.TabIndex = 19;
             // 
             // contextMenuStrip1
             // 
