@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Labbill1));
             this.btnPrint = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,14 +41,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtBillSummary = new System.Windows.Forms.Label();
+            this.d_t = new System.Windows.Forms.Label();
+            this.pNo = new System.Windows.Forms.Label();
+            this.refnum = new System.Windows.Forms.Label();
+            this.pname = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.pname = new System.Windows.Forms.Label();
-            this.refnum = new System.Windows.Forms.Label();
-            this.pNo = new System.Windows.Forms.Label();
-            this.d_t = new System.Windows.Forms.Label();
-            this.txtBillSummary = new System.Windows.Forms.Label();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +66,7 @@
             this.btnPrint.Text = "Bill Print";
             this.btnPrint.UseVisualStyleBackColor = false;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            this.btnPrint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnPrint_MouseClick);
             // 
             // pictureBox1
             // 
@@ -88,37 +92,40 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(241, 67);
+            this.label2.Location = new System.Drawing.Point(244, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(163, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Pitipana,Homagama.";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(241, 87);
+            this.label3.Location = new System.Drawing.Point(244, 92);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "www.trustwell.com";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(241, 107);
+            this.label4.Location = new System.Drawing.Point(244, 122);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(165, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "Tel no :001 778 0099";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(64, 245);
+            this.label5.Location = new System.Drawing.Point(64, 234);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 20);
             this.label5.TabIndex = 10;
@@ -128,7 +135,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(64, 279);
+            this.label6.Location = new System.Drawing.Point(64, 265);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 20);
             this.label6.TabIndex = 11;
@@ -138,7 +145,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(64, 313);
+            this.label7.Location = new System.Drawing.Point(64, 298);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 20);
             this.label7.TabIndex = 12;
@@ -148,7 +155,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(64, 348);
+            this.label8.Location = new System.Drawing.Point(64, 327);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(102, 20);
             this.label8.TabIndex = 13;
@@ -176,6 +183,46 @@
             this.panel1.Size = new System.Drawing.Size(700, 649);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txtBillSummary
+            // 
+            this.txtBillSummary.AutoSize = true;
+            this.txtBillSummary.Location = new System.Drawing.Point(222, 386);
+            this.txtBillSummary.Name = "txtBillSummary";
+            this.txtBillSummary.Size = new System.Drawing.Size(0, 16);
+            this.txtBillSummary.TabIndex = 24;
+            // 
+            // d_t
+            // 
+            this.d_t.AutoSize = true;
+            this.d_t.Location = new System.Drawing.Point(186, 348);
+            this.d_t.Name = "d_t";
+            this.d_t.Size = new System.Drawing.Size(0, 16);
+            this.d_t.TabIndex = 23;
+            // 
+            // pNo
+            // 
+            this.pNo.AutoSize = true;
+            this.pNo.Location = new System.Drawing.Point(200, 313);
+            this.pNo.Name = "pNo";
+            this.pNo.Size = new System.Drawing.Size(0, 16);
+            this.pNo.TabIndex = 22;
+            // 
+            // refnum
+            // 
+            this.refnum.AutoSize = true;
+            this.refnum.Location = new System.Drawing.Point(213, 282);
+            this.refnum.Name = "refnum";
+            this.refnum.Size = new System.Drawing.Size(0, 16);
+            this.refnum.TabIndex = 21;
+            // 
+            // pname
+            // 
+            this.pname.AutoSize = true;
+            this.pname.Location = new System.Drawing.Point(222, 248);
+            this.pname.Name = "pname";
+            this.pname.Size = new System.Drawing.Size(0, 16);
+            this.pname.TabIndex = 20;
             // 
             // label9
             // 
@@ -205,50 +252,25 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // pname
+            // printDocument1
             // 
-            this.pname.AutoSize = true;
-            this.pname.Location = new System.Drawing.Point(222, 248);
-            this.pname.Name = "pname";
-            this.pname.Size = new System.Drawing.Size(0, 16);
-            this.pname.TabIndex = 20;
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
-            // refnum
+            // printPreviewDialog1
             // 
-            this.refnum.AutoSize = true;
-            this.refnum.Location = new System.Drawing.Point(213, 282);
-            this.refnum.Name = "refnum";
-            this.refnum.Size = new System.Drawing.Size(0, 16);
-            this.refnum.TabIndex = 21;
-            // 
-            // pNo
-            // 
-            this.pNo.AutoSize = true;
-            this.pNo.Location = new System.Drawing.Point(200, 313);
-            this.pNo.Name = "pNo";
-            this.pNo.Size = new System.Drawing.Size(0, 16);
-            this.pNo.TabIndex = 22;
-            // 
-            // d_t
-            // 
-            this.d_t.AutoSize = true;
-            this.d_t.Location = new System.Drawing.Point(186, 348);
-            this.d_t.Name = "d_t";
-            this.d_t.Size = new System.Drawing.Size(0, 16);
-            this.d_t.TabIndex = 23;
-            // 
-            // txtBillSummary
-            // 
-            this.txtBillSummary.AutoSize = true;
-            this.txtBillSummary.Location = new System.Drawing.Point(222, 463);
-            this.txtBillSummary.Name = "txtBillSummary";
-            this.txtBillSummary.Size = new System.Drawing.Size(0, 16);
-            this.txtBillSummary.TabIndex = 24;
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
             // 
             // Labbill1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(982, 744);
             this.Controls.Add(this.btnCancel);
@@ -288,5 +310,7 @@
         private System.Windows.Forms.Label refnum;
         private System.Windows.Forms.Label pname;
         private System.Windows.Forms.Label txtBillSummary;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }

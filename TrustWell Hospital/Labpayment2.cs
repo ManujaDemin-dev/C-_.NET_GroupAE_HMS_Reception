@@ -102,6 +102,7 @@ namespace TrustWell_Hospital
             Labbill1 billForm = new Labbill1(selectedTests, patientName, referenceNo, contactNumber);
             billForm.StartPosition = FormStartPosition.CenterScreen;
             billForm.ShowDialog();
+            this.Close();
 
         }
     }
