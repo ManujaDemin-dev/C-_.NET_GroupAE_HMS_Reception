@@ -68,14 +68,24 @@ namespace TrustWell_Hospital
             {
                 int patientID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["PatientID"].Value);
                 string patientName = dataGridView1.Rows[e.RowIndex].Cells["PatientName"].Value.ToString();
+                string contactNumber = dataGridView1.Rows[e.RowIndex].Cells["ContactNumber"].Value.ToString();
 
-                Labpayment2 testsPage = new LabTestsPage(patientID, patientName);
+                // Generate a Reference Number — customize this as needed
+                string referenceNo = $"REF-{DateTime.Now:yyyyMMddHHmmss}";
+
+                Labpayment2 testsPage = new Labpayment2(patientName, referenceNo, contactNumber);
                 testsPage.StartPosition = FormStartPosition.CenterParent;
                 testsPage.ShowDialog();
             }
         }
 
+
         private void txtname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }

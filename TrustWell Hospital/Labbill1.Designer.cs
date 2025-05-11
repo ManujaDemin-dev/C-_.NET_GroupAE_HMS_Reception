@@ -40,14 +40,14 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtBillSummary = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtRefNo = new System.Windows.Forms.TextBox();
-            this.txtPatientNo = new System.Windows.Forms.TextBox();
-            this.txtDateTime = new System.Windows.Forms.TextBox();
-            this.txtPatientName = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.pname = new System.Windows.Forms.Label();
+            this.refnum = new System.Windows.Forms.Label();
+            this.pNo = new System.Windows.Forms.Label();
+            this.d_t = new System.Windows.Forms.Label();
+            this.txtBillSummary = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -157,11 +157,11 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.txtBillSummary);
+            this.panel1.Controls.Add(this.d_t);
+            this.panel1.Controls.Add(this.pNo);
+            this.panel1.Controls.Add(this.refnum);
+            this.panel1.Controls.Add(this.pname);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.txtRefNo);
-            this.panel1.Controls.Add(this.txtPatientNo);
-            this.panel1.Controls.Add(this.txtDateTime);
-            this.panel1.Controls.Add(this.txtPatientName);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -175,16 +175,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(700, 649);
             this.panel1.TabIndex = 0;
-            // 
-            // txtBillSummary
-            // 
-            this.txtBillSummary.Location = new System.Drawing.Point(162, 415);
-            this.txtBillSummary.Multiline = true;
-            this.txtBillSummary.Name = "txtBillSummary";
-            this.txtBillSummary.ReadOnly = true;
-            this.txtBillSummary.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtBillSummary.Size = new System.Drawing.Size(371, 199);
-            this.txtBillSummary.TabIndex = 19;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label9
             // 
@@ -195,35 +186,6 @@
             this.label9.Size = new System.Drawing.Size(192, 29);
             this.label9.TabIndex = 18;
             this.label9.Text = "Lab Payment Bill";
-            // 
-            // txtRefNo
-            // 
-            this.txtRefNo.Location = new System.Drawing.Point(217, 279);
-            this.txtRefNo.Name = "txtRefNo";
-            this.txtRefNo.Size = new System.Drawing.Size(189, 22);
-            this.txtRefNo.TabIndex = 17;
-            // 
-            // txtPatientNo
-            // 
-            this.txtPatientNo.Location = new System.Drawing.Point(217, 311);
-            this.txtPatientNo.Name = "txtPatientNo";
-            this.txtPatientNo.Size = new System.Drawing.Size(189, 22);
-            this.txtPatientNo.TabIndex = 16;
-            // 
-            // txtDateTime
-            // 
-            this.txtDateTime.Location = new System.Drawing.Point(217, 346);
-            this.txtDateTime.Name = "txtDateTime";
-            this.txtDateTime.ReadOnly = true;
-            this.txtDateTime.Size = new System.Drawing.Size(189, 22);
-            this.txtDateTime.TabIndex = 15;
-            // 
-            // txtPatientName
-            // 
-            this.txtPatientName.Location = new System.Drawing.Point(217, 245);
-            this.txtPatientName.Name = "txtPatientName";
-            this.txtPatientName.Size = new System.Drawing.Size(191, 22);
-            this.txtPatientName.TabIndex = 14;
             // 
             // btnCancel
             // 
@@ -242,6 +204,46 @@
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // pname
+            // 
+            this.pname.AutoSize = true;
+            this.pname.Location = new System.Drawing.Point(222, 248);
+            this.pname.Name = "pname";
+            this.pname.Size = new System.Drawing.Size(0, 16);
+            this.pname.TabIndex = 20;
+            // 
+            // refnum
+            // 
+            this.refnum.AutoSize = true;
+            this.refnum.Location = new System.Drawing.Point(213, 282);
+            this.refnum.Name = "refnum";
+            this.refnum.Size = new System.Drawing.Size(0, 16);
+            this.refnum.TabIndex = 21;
+            // 
+            // pNo
+            // 
+            this.pNo.AutoSize = true;
+            this.pNo.Location = new System.Drawing.Point(200, 313);
+            this.pNo.Name = "pNo";
+            this.pNo.Size = new System.Drawing.Size(0, 16);
+            this.pNo.TabIndex = 22;
+            // 
+            // d_t
+            // 
+            this.d_t.AutoSize = true;
+            this.d_t.Location = new System.Drawing.Point(186, 348);
+            this.d_t.Name = "d_t";
+            this.d_t.Size = new System.Drawing.Size(0, 16);
+            this.d_t.TabIndex = 23;
+            // 
+            // txtBillSummary
+            // 
+            this.txtBillSummary.AutoSize = true;
+            this.txtBillSummary.Location = new System.Drawing.Point(222, 463);
+            this.txtBillSummary.Name = "txtBillSummary";
+            this.txtBillSummary.Size = new System.Drawing.Size(0, 16);
+            this.txtBillSummary.TabIndex = 24;
             // 
             // Labbill1
             // 
@@ -278,13 +280,13 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtRefNo;
-        private System.Windows.Forms.TextBox txtPatientNo;
-        private System.Windows.Forms.TextBox txtDateTime;
-        private System.Windows.Forms.TextBox txtPatientName;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.TextBox txtBillSummary;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Label d_t;
+        private System.Windows.Forms.Label pNo;
+        private System.Windows.Forms.Label refnum;
+        private System.Windows.Forms.Label pname;
+        private System.Windows.Forms.Label txtBillSummary;
     }
 }

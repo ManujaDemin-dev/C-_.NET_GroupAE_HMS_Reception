@@ -24,8 +24,13 @@ namespace TrustWell_Hospital
             this.patientName = patientName;
             this.referenceNo = referenceNo;
             this.contactNumber = contactNumber;
-            // existing code
+
+            LoadLabpayment2();
+            this.btnsearch.Click += button1_search;
+            DataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            this.Checkout.Click += Checkout_Click;
         }
+
 
 
         private void Labpayment2_Load(object sender, EventArgs e) { }
@@ -42,16 +47,16 @@ namespace TrustWell_Hospital
             }
 
             DataTable dt = Database.ExecuteQuery(query, parameters.ToArray());
-            dataGridView1.DataSource = dt;
+            DataGridView1.DataSource = dt;
 
-            if (!dataGridView1.Columns.Contains("Add"))
+            if (!DataGridView1.Columns.Contains("Add"))
             {
                 DataGridViewButtonColumn viewBtn = new DataGridViewButtonColumn();
                 viewBtn.HeaderText = "";
                 viewBtn.Text = "Add";
                 viewBtn.UseColumnTextForButtonValue = true;
                 viewBtn.Name = "Add";
-                dataGridView1.Columns.Add(viewBtn);
+                DataGridView1.Columns.Add(viewBtn);
             }
         }
 
@@ -67,11 +72,11 @@ namespace TrustWell_Hospital
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && dataGridView1.Columns[e.ColumnIndex].Name == "Add")
+            if (e.RowIndex >= 0 && DataGridView1.Columns[e.ColumnIndex].Name == "Add")
             {
-                int testID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["TestID"].Value);
-                string testName = dataGridView1.Rows[e.RowIndex].Cells["TestName"].Value.ToString();
-                decimal testPrice = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["TestPrice"].Value);
+                int testID = Convert.ToInt32(DataGridView1.Rows[e.RowIndex].Cells["TestID"].Value);
+                string testName = DataGridView1.Rows[e.RowIndex].Cells["TestName"].Value.ToString();
+                decimal testPrice = Convert.ToDecimal(DataGridView1.Rows[e.RowIndex].Cells["TestPrice"].Value);
 
                 // Avoid duplicates
                 if (!selectedTests.Any(t => t.TestID == testID))

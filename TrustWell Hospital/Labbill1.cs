@@ -14,7 +14,6 @@ namespace TrustWell_Hospital
     {
         //store the selected test details
         private List<(int TestID, string TestName, decimal TestPrice)> selectedTests;
-        //constructor that receives from the other form
         private string patientName;
         private string referenceNo;
         private string contactNumber;
@@ -28,13 +27,17 @@ namespace TrustWell_Hospital
             this.contactNumber = contactNumber;
 
             this.Load += Labbill_Load;
-            btnCancel.Click += btnCancel_Click;
-            btnPrint.Click += btnPrint_Click;
         }
+
 
         private void Labbill_Load(object sender, EventArgs e)
         {
-            txtDateTime.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            pname.Text = this.patientName;
+            refnum.Text = this.referenceNo;
+            pNo.Text = this.contactNumber;
+
+            d_t.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
 
             StringBuilder summary = new StringBuilder();
             summary.AppendLine("======= LAB TEST BILL =======");
@@ -70,5 +73,9 @@ namespace TrustWell_Hospital
             MessageBox.Show("Bill is printed successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
