@@ -72,7 +72,6 @@ namespace TrustWell_Hospital
 
                 // Generate a Reference Number — customize this as needed
                 string referenceNo = $"REF-{DateTime.Now:yyyyMMddHHmmss}";
-
                 Labpayment2 testsPage = new Labpayment2(patientName, referenceNo, contactNumber);
                 testsPage.StartPosition = FormStartPosition.CenterParent;
                 testsPage.ShowDialog();

@@ -38,7 +38,7 @@ namespace TrustWell_Hospital
 
             d_t.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
-
+            //create the bill
             StringBuilder summary = new StringBuilder();
             summary.AppendLine("======= LAB TEST BILL =======");
             summary.AppendLine($"Date: {DateTime.Now:yyyy-MM-dd HH:mm:ss}");
@@ -71,6 +71,7 @@ namespace TrustWell_Hospital
         private void btnPrint_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bill is printed successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
