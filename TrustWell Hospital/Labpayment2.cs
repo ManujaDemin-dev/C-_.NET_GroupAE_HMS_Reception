@@ -59,7 +59,7 @@ namespace TrustWell_Hospital
 
         public void LoadLabpayment2(string name = "")
         {
-            string query = "SELECT TestID, TestName, TestPrice, TestType FROM Testtypes WHERE 1=1";
+            string query = "SELECT TestID, TestName, TestPrice, Type FROM Testtypes WHERE 1=1";
             var parameters = new List<MySqlParameter>();
 
             if (!string.IsNullOrWhiteSpace(name))
