@@ -440,3 +440,66 @@ D:\net_reception\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\Syst
 D:\net_reception\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\net_reception\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\obj\Debug\TrustWel.21714CDE.Up2Date
 D:\net_reception\C-_.NET_GroupAE_HMS_Reception\TrustWell Hospital\bin\Debug\Guna.UI.dll
+C:\Group AE\new\TrustWell Hospital\obj\Debug\TrustWell_Hospital.appointment_doc.resources
+C:\Group AE\new\TrustWell Hospital\obj\Debug\TrustWell_Hospital.view_btn_doc.resources
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\TrustWell Hospital.exe.config
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\TrustWell Hospital.exe
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\TrustWell Hospital.pdb
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\BCrypt.Net-Next.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\BouncyCastle.Cryptography.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\Google.Protobuf.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\K4os.Compression.LZ4.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\K4os.Hash.xxHash.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\MySql.Data.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.Buffers.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.IO.Pipelines.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.Memory.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.Numerics.Vectors.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\ZstdSharp.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\BCrypt.Net-Next.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\BouncyCastle.Cryptography.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\Google.Protobuf.pdb
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\Google.Protobuf.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\K4os.Compression.LZ4.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\K4os.Hash.xxHash.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\MySql.Data.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.Buffers.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.IO.Pipelines.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.Memory.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.Numerics.Vectors.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell Hospital.csproj.AssemblyReference.cache
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.AddAppointment.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.Addpatient1.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.Addpatients2.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.Appoinmentscs.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.appointment_doc.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.DashboardForm.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.DoctorDetailsPopup.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.doctors.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.Form1.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.Labbill1.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.LabPayment1.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.Labpayment2.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.PatientMiniPage.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.patients1.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.Properties.Resources.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell_Hospital.view_btn_doc.resources
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell Hospital.csproj.GenerateResource.cache
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell Hospital.csproj.CoreCompileInputs.cache
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWel.21714CDE.Up2Date
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell Hospital.exe
+D:\NSBM\WFA project\TrustWell Hospital\obj\Debug\TrustWell Hospital.pdb
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\itextsharp.dll
+D:\NSBM\WFA project\TrustWell Hospital\bin\Debug\itextsharp.xml
