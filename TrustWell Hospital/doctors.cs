@@ -1,118 +1,86 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Crypto.Parameters;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 using WindowsFormsApp1;
-using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TrustWell_Hospital
 {
-    public partial class doctors: UserControl
+    public partial class doctors : UserControl
     {
         public doctors()
         {
             InitializeComponent();
-            //LoadDoctorData();
+            LoadSpecializations();
+            LoadDoctors();
         }
 
-        
-
-        private void FillSpecializationCombo()
+        private void LoadDoctors(string name = "", int? specializationId = null)
         {
-            string query = "SELECT DISTINCT Specialization FROM Doctors";
-            DataTable dt = Database.ExecuteQuery(query, null);
-            cmbSpecialization.Items.Clear();
-            cmbSpecialization.Items.Add("All");
+            //gunaDataGridView1.Columns.Add("ID", "ID");
+            //gunaDataGridView1.Columns.Add("Name", "Name");
+            //gunaDataGridView1.Columns.Add("Age", "Age");
 
-            foreach (DataRow row in dt.Rows)
+            //^^^^^look i thought were gonna need this guys but we dont :)
+
+
+            string query = "SELECT d.DoctorID, d.DoctorName, s.Specialization, d.Fees, d.ContactNumber FROM Doctors d JOIN Doc_specialization s ON d.Specialization = s.specialization_id WHERE 1=1";
+
+            MySqlParameter[] parameters = null;
+
+            DataTable dt = Database.ExecuteQuery(query, parameters);
+
+            gunaDataGridView1.DataSource = dt;
+
+
+            if (!gunaDataGridView1.Columns.Contains("AddAppointment"))
             {
-                cmbSpecialization.Items.Add(row["Specialization"].ToString());
+                DataGridViewButtonColumn AddAppointment = new DataGridViewButtonColumn();
+                AddAppointment.HeaderText = "AddAppointment";
+                AddAppointment.Text = "AddAppointment";
+                AddAppointment.UseColumnTextForButtonValue = true;
+                AddAppointment.Name = "AddAppointment";
+                gunaDataGridView1.Columns.Add(AddAppointment);
             }
-            cmbSpecialization.SelectedIndex = 0;
+
+            if (!gunaDataGridView1.Columns.Contains("View"))
+            {
+                DataGridViewButtonColumn viewBtn = new DataGridViewButtonColumn();
+                viewBtn.HeaderText = "View Details";
+                viewBtn.Text = "View";
+                viewBtn.UseColumnTextForButtonValue = true;
+                viewBtn.Name = "View";
+                gunaDataGridView1.Columns.Add(viewBtn);
+            }
+
+
+        }
+
+
+        // private void DoctorsForm_Load(object sender, EventArgs e)
+        // {
+        //     // Add custom buttons manually if not added in designer
+
+        // }
+
+
+        private void LoadSpecializations()
+        {
+            string query = "SELECT * FROM Doc_specialization";
+            DataTable dt = Database.ExecuteQuery(query, null);
+            comboBox1.DisplayMember = "Specialization";
+            comboBox1.ValueMember = "specialization_id";
+            comboBox1.DataSource = dt;
+            comboBox1.SelectedIndex = -1;
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            LoadDoctorData();
-        }
-
-        private void LoadDoctorData()  
-        {
-            string query = "SELECT DoctorID, DoctorName, Specialization FROM Doctors";
-            List<MySqlParameter> parameters = new List<MySqlParameter>();
-
-            if (!string.IsNullOrWhiteSpace(txtDoctorName.Text))
-            {
-                query += " AND DoctorName LIKE @name";
-                parameters.Add(new MySqlParameter("@name", "%" + txtDoctorName.Text + "%"));
-            }
-
-            if (cmbSpecialization.SelectedItem?.ToString() != "All")
-            {
-                query += " AND Specialization = @special";
-                parameters.Add(new MySqlParameter("@special", cmbSpecialization.SelectedItem.ToString()));
-            }
-
-            DataTable dt = Database.ExecuteQuery(query, parameters.ToArray());
-            dataGridView1.Rows.Clear();
-            dataGridView1.Columns.Clear();
-
-            dataGridView1.Columns.Add("DoctorName", "Doctor Name");
-            dataGridView1.Columns.Add("Specialization", "Specialization");
-
-            DataGridViewButtonColumn btnAppointment = new DataGridViewButtonColumn
-            {
-                Text = "Add Appointment",
-                UseColumnTextForButtonValue = true,
-                HeaderText = "Add Appointment"
-            };
-            dataGridView1.Columns.Add(btnAppointment);
-
-            DataGridViewButtonColumn btnView = new DataGridViewButtonColumn
-            {
-                Text = "View",
-                UseColumnTextForButtonValue = true,
-                HeaderText = "View"
-            };
-            dataGridView1.Columns.Add(btnView);
-
-            foreach (DataRow row in dt.Rows)
-            {
-                dataGridView1.Rows.Add(row["DoctorName"], row["Specialization"]);
-                dataGridView1.Rows[dataGridView1.Rows.Count - 1].Tag = row["DoctorID"]; // store DoctorID in row.Tag
-            }
-
-
-        }
-        private void dgvDoctors_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex < 0) return;
-
-            int doctorID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Tag);
-
-            // Add Appointment Button
-            if (e.ColumnIndex == 2) // Add Appointment column
-            {
-                //var appointmentForm = new AddAppointment(doctorID); // you create this
-                //appointmentForm.ShowDialog();
-            }
-
-            // View Button
-            if (e.ColumnIndex == 3) // View column
-            {
-                //var viewPopup = new DoctorDetailsPopup(doctorID); // you create this
-                //viewPopup.ShowDialog();
-            }
-        }
-
         private void doctors_Load(object sender, EventArgs e)
         {
 
@@ -146,6 +114,31 @@ namespace TrustWell_Hospital
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void doctors_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaDataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+            if (e.RowIndex >= 0 && gunaDataGridView1.Columns[e.ColumnIndex].Name == "View")
+            {
+                int DOCID = Convert.ToInt32(gunaDataGridView1.Rows[e.RowIndex].Cells["DoctorID"].Value);
+                view_btn_doc popup = new view_btn_doc(DOCID);
+                popup.StartPosition = FormStartPosition.CenterParent;
+                popup.ShowDialog();
+            }
+
+            if (e.RowIndex >= 0 && gunaDataGridView1.Columns[e.ColumnIndex].Name == "AddAppointment")
+            {
+                int patientID = Convert.ToInt32(gunaDataGridView1.Rows[e.RowIndex].Cells["DoctorID"].Value);
+                PatientMiniPage popup = new PatientMiniPage(patientID);
+                popup.StartPosition = FormStartPosition.CenterParent;
+                popup.ShowDialog();
+            }
         }
     }
 }

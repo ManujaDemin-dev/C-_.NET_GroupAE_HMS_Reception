@@ -42,14 +42,6 @@
             label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(462, 174);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 0;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -101,6 +93,14 @@
             label5.TabIndex = 5;
             label5.Text = "appointment status";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(462, 174);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 0;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -126,6 +126,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Name = "appointment_doc";
             this.Text = "appointment_doc";
+            this.Load += new System.EventHandler(this.appointment_doc_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
