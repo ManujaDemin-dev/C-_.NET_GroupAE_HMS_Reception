@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.button1 = new System.Windows.Forms.Button();
             this.gunaDataGridViewPatients = new Guna.UI.WinForms.GunaDataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -63,16 +62,6 @@
             label6.TabIndex = 7;
             label6.Text = "New Appointment";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1085, 568);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 44);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Confirm";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // gunaDataGridViewPatients
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -90,7 +79,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gunaDataGridViewPatients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gunaDataGridViewPatients.ColumnHeadersHeight = 4;
+            this.gunaDataGridViewPatients.ColumnHeadersHeight = 25;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -107,7 +96,7 @@
             this.gunaDataGridViewPatients.RowHeadersWidth = 51;
             this.gunaDataGridViewPatients.RowTemplate.Height = 24;
             this.gunaDataGridViewPatients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridViewPatients.Size = new System.Drawing.Size(1185, 260);
+            this.gunaDataGridViewPatients.Size = new System.Drawing.Size(1185, 369);
             this.gunaDataGridViewPatients.TabIndex = 8;
             this.gunaDataGridViewPatients.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gunaDataGridViewPatients.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -122,7 +111,7 @@
             this.gunaDataGridViewPatients.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.gunaDataGridViewPatients.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.gunaDataGridViewPatients.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gunaDataGridViewPatients.ThemeStyle.HeaderStyle.Height = 4;
+            this.gunaDataGridViewPatients.ThemeStyle.HeaderStyle.Height = 25;
             this.gunaDataGridViewPatients.ThemeStyle.ReadOnly = false;
             this.gunaDataGridViewPatients.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDataGridViewPatients.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -131,6 +120,7 @@
             this.gunaDataGridViewPatients.ThemeStyle.RowsStyle.Height = 24;
             this.gunaDataGridViewPatients.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridViewPatients.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gunaDataGridViewPatients.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDataGridViewPatients_CellContentClick);
             // 
             // label7
             // 
@@ -173,7 +163,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.gunaDataGridViewPatients);
             this.Controls.Add(label6);
-            this.Controls.Add(this.button1);
             this.Controls.Add(label1);
             this.Name = "appointment_doc";
             this.Text = "appointment_doc";
@@ -185,7 +174,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridViewPatients;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;

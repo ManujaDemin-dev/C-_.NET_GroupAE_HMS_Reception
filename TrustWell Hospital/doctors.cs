@@ -12,6 +12,8 @@ namespace TrustWell_Hospital
 {
     public partial class doctors : UserControl
     {
+        private int docid;
+
         public doctors()
         {
             InitializeComponent();
@@ -35,7 +37,6 @@ namespace TrustWell_Hospital
             DataTable dt = Database.ExecuteQuery(query, parameters);
 
             gunaDataGridView1.DataSource = dt;
-
 
             if (!gunaDataGridView1.Columns.Contains("AddAppointment"))
             {
@@ -134,8 +135,11 @@ namespace TrustWell_Hospital
 
             if (e.RowIndex >= 0 && gunaDataGridView1.Columns[e.ColumnIndex].Name == "AddAppointment")
             {
-                int patientID = Convert.ToInt32(gunaDataGridView1.Rows[e.RowIndex].Cells["DoctorID"].Value);
-                PatientMiniPage popup = new PatientMiniPage(patientID);
+                int Docid = Convert.ToInt32(gunaDataGridView1.Rows[e.RowIndex].Cells["DoctorID"].Value);
+                string Docname = gunaDataGridView1.Rows[e.RowIndex].Cells["DoctorName"].Value.ToString();
+                string spec = gunaDataGridView1.Rows[e.RowIndex].Cells["Specialization"].Value.ToString();
+                int Docfee = Convert.ToInt32(gunaDataGridView1.Rows[e.RowIndex].Cells["Fees"].Value);
+                appointment_doc popup = new appointment_doc(Docid,Docname,spec,Docfee);
                 popup.StartPosition = FormStartPosition.CenterParent;
                 popup.ShowDialog();
             }

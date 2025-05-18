@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Guna.UI.WinForms;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -44,14 +45,14 @@ namespace TrustWell_Hospital
 
             gunaDataGridViewPatients.DataSource = dt;
 
-            if (!gunaDataGridViewPatients.Columns.Contains("View"))
+            if (!gunaDataGridViewPatients.Columns.Contains("Add"))
             {
-                DataGridViewButtonColumn viewBtn = new DataGridViewButtonColumn();
-                viewBtn.HeaderText = "Action";
-                viewBtn.Text = "View";
-                viewBtn.UseColumnTextForButtonValue = true;
-                viewBtn.Name = "View";
-                gunaDataGridViewPatients.Columns.Add(viewBtn);
+                DataGridViewButtonColumn addBtn = new DataGridViewButtonColumn();
+                addBtn.HeaderText = "Add";
+                addBtn.Text = "Add";
+                addBtn.UseColumnTextForButtonValue = true;
+                addBtn.Name = "Add";
+                gunaDataGridViewPatients.Columns.Add(addBtn);
             }
         }
 
@@ -68,6 +69,18 @@ namespace TrustWell_Hospital
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gunaDataGridViewPatients_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && gunaDataGridViewPatients.Columns[e.ColumnIndex].Name == "Add")
+            {
+                string PatientName = gunaDataGridViewPatients.Rows[e.RowIndex].Cells["PatientName"].Value.ToString();
+                string Contact = gunaDataGridViewPatients.Rows[e.RowIndex].Cells["ContactNumber"].Value.ToString();
+                Schedule_doc popup = new Schedule_doc(doctorid,doctorName,special,fees,PatientName,PatientName+doctorName,Contact);
+                popup.StartPosition = FormStartPosition.CenterParent;
+                popup.ShowDialog();
+            }
         }
     }
 }
