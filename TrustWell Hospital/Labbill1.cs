@@ -22,13 +22,13 @@ namespace TrustWell_Hospital
         private string patientName;
         private string referenceNo;
         private string contactNumber;
-        private int  patientID;
+        private int patientID;
         private decimal total = 0;
         private String Date;
         private List<(int TestID, string TestName, decimal TestPrice)> cart;
         private string testIDsCsv;
 
-        public Labbill1(List<(int TestID, string TestName, decimal TestPrice)> selectedTests, string patientName, string referenceNo, string contactNumber,int patientID)
+        public Labbill1(List<(int TestID, string TestName, decimal TestPrice)> selectedTests, string patientName, string referenceNo, string contactNumber, int patientID)
         {
             InitializeComponent();
             this.selectedTests = selectedTests;
@@ -81,7 +81,7 @@ namespace TrustWell_Hospital
         {
             SaveStyledPDF();
 
-            total = selectedTests.Sum(t => t.TestPrice); // make sure total is correctly calculated
+            total = selectedTests.Sum(t => t.TestPrice); // make sure total is correctly calculated 
 
             foreach (var test in selectedTests)
             {
@@ -93,11 +93,9 @@ namespace TrustWell_Hospital
         };
                 Database.ExecuteNonQuery(labQuery, labParams);
             }
-
-            try
-            {
-                foreach (var test in selectedTests)
+                try
                 {
+                    // Insert one billing record with all TestIDs as CSV
                     string billingQuery = "INSERT INTO Billing (ReferenceNum, PatientID, StaffID, TestType, TotalAmount, PaymentStatus, PaymentMethod, BillingDate, CreatedAt) " +
                                           "VALUES (@ReferenceNum, @PatientId, @staffid, @testtype, @totalAmount, 'Pending', 'Cash', @BillingDate, NOW())";
 
@@ -105,20 +103,18 @@ namespace TrustWell_Hospital
                     new MySqlParameter("@ReferenceNum", referenceNo),
                     new MySqlParameter("@PatientId", patientID),
                     new MySqlParameter("@staffid", UserSession.StaffId),
-                    new MySqlParameter("@testtype" , test.TestID),
+                    new MySqlParameter("@testtype",testIDsCsv), // Insert all TestIDs as CSV
                     new MySqlParameter("@totalAmount", total),
                     new MySqlParameter("@BillingDate", Date),
-                    
-                    };
+                };
 
                     Database.ExecuteNonQuery(billingQuery, billingParams);
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error inserting into Billing: " + ex.Message);
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error inserting into Billing: " + ex.Message);
-            }
-        }
 
 
         private void SaveStyledPDF()
