@@ -7,6 +7,12 @@ using System.Windows.Forms;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.draw;
+using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Utilities.Net;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using WindowsFormsApp1;
+using System.Linq;
 
 namespace TrustWell_Hospital
 {
@@ -16,14 +22,19 @@ namespace TrustWell_Hospital
         private string patientName;
         private string referenceNo;
         private string contactNumber;
+        private int  patientID;
+        private decimal total = 0;
+        private String Date;
+        private List<(int TestID, string TestName, decimal TestPrice)> cart;
 
-        public Labbill1(List<(int TestID, string TestName, decimal TestPrice)> selectedTests, string patientName, string referenceNo, string contactNumber)
+        public Labbill1(List<(int TestID, string TestName, decimal TestPrice)> selectedTests, string patientName, string referenceNo, string contactNumber,int patientID)
         {
             InitializeComponent();
             this.selectedTests = selectedTests;
             this.patientName = patientName;
             this.referenceNo = referenceNo;
             this.contactNumber = contactNumber;
+            this.patientID = patientID;
 
             this.Load += Labbill_Load;
         }
@@ -34,7 +45,7 @@ namespace TrustWell_Hospital
             refnum.Text = this.referenceNo;
             pNo.Text = this.contactNumber;
             d_t.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-
+            Date = d_t.Text;
             txtBillSummary.Text = GenerateTextBillSummary();
         }
 
@@ -48,7 +59,6 @@ namespace TrustWell_Hospital
             sb.AppendLine($"Contact No: {contactNumber}");
             sb.AppendLine("-----------------------------");
             sb.AppendLine("Tests:");
-            decimal total = 0;
             foreach (var test in selectedTests)
             {
                 sb.AppendLine($"{test.TestName} - Rs. {test.TestPrice:N2}");
@@ -68,6 +78,38 @@ namespace TrustWell_Hospital
         private void btnPrint_Click(object sender, EventArgs e)
         {
             SaveStyledPDF();
+
+            foreach (var test in selectedTests)
+            {
+                string query = "INSERT INTO LabTests (PatientID,Status,TestType,ReferenceID) VALUES (@PatientId,'Pending',@TestType,@ReferenceID)";
+                MySqlParameter[] parameters = {
+                    new MySqlParameter("@PatientId", patientID),
+                    new MySqlParameter("@TestType", test.TestID),
+                    new MySqlParameter("@ReferenceID", referenceNo),
+                    };
+                Database.ExecuteNonQuery(query, parameters);
+            }
+            try
+            {
+                List<int> testIds = cart.Select(t => t.TestID).ToList();
+                string inClause = string.Join(",", testIds);
+                string query = "INSERT INTO Billing (ReferenceNum,PatientID,StaffID,TestType,TotalAmount,PaymentStatus,PaymentMethod,BillingDate,CreatedAt)" +
+                        " VALUES (@ReferenceNum,@PatientId,@staffid,@testtype,@totalAmount,'Pending','Cash',@BillingDate,NOW())";
+                    MySqlParameter[] parameters = {
+                    new MySqlParameter("@ReferenceNum", referenceNo),
+                    new MySqlParameter("@PatientId", patientID),
+                    new MySqlParameter("@staffid", UserSession.StaffId),
+                    new MySqlParameter("@testtype" , inClause),
+                    new MySqlParameter("@totalAmount",total),
+                    new MySqlParameter("@BillingDate", Date),
+                    };
+                    Database.ExecuteNonQuery(query, parameters);
+                }
+           
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while inserting billing data:\n" + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void SaveStyledPDF()
