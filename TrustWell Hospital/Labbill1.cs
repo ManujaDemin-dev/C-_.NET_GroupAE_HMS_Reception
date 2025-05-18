@@ -26,6 +26,7 @@ namespace TrustWell_Hospital
         private decimal total = 0;
         private String Date;
         private List<(int TestID, string TestName, decimal TestPrice)> cart;
+        private string testIDsCsv;
 
         public Labbill1(List<(int TestID, string TestName, decimal TestPrice)> selectedTests, string patientName, string referenceNo, string contactNumber,int patientID)
         {
@@ -47,6 +48,7 @@ namespace TrustWell_Hospital
             d_t.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             Date = d_t.Text;
             txtBillSummary.Text = GenerateTextBillSummary();
+            string testIDsCsv = string.Join(",", selectedTests.Select(test => test.TestID.ToString()));
         }
 
         private string GenerateTextBillSummary()
@@ -79,38 +81,45 @@ namespace TrustWell_Hospital
         {
             SaveStyledPDF();
 
+            total = selectedTests.Sum(t => t.TestPrice); // make sure total is correctly calculated
+
             foreach (var test in selectedTests)
             {
-                string query = "INSERT INTO LabTests (PatientID,Status,TestType,ReferenceID) VALUES (@PatientId,'Pending',@TestType,@ReferenceID)";
-                MySqlParameter[] parameters = {
-                    new MySqlParameter("@PatientId", patientID),
-                    new MySqlParameter("@TestType", test.TestID),
-                    new MySqlParameter("@ReferenceID", referenceNo),
-                    };
-                Database.ExecuteNonQuery(query, parameters);
+                string labQuery = "INSERT INTO LabTests (PatientID, Status, TestType, ReferenceID) VALUES (@PatientId, 'Pending', @TestType, @ReferenceID)";
+                MySqlParameter[] labParams = {
+                 new MySqlParameter("@PatientId", patientID),
+                 new MySqlParameter("@TestType", test.TestID),
+                 new MySqlParameter("@ReferenceID", referenceNo),
+        };
+                Database.ExecuteNonQuery(labQuery, labParams);
             }
+
             try
             {
-                List<int> testIds = cart.Select(t => t.TestID).ToList();
-                string inClause = string.Join(",", testIds);
-                string query = "INSERT INTO Billing (ReferenceNum,PatientID,StaffID,TestType,TotalAmount,PaymentStatus,PaymentMethod,BillingDate,CreatedAt)" +
-                        " VALUES (@ReferenceNum,@PatientId,@staffid,@testtype,@totalAmount,'Pending','Cash',@BillingDate,NOW())";
-                    MySqlParameter[] parameters = {
+                foreach (var test in selectedTests)
+                {
+                    string billingQuery = "INSERT INTO Billing (ReferenceNum, PatientID, StaffID, TestType, TotalAmount, PaymentStatus, PaymentMethod, BillingDate, CreatedAt) " +
+                                          "VALUES (@ReferenceNum, @PatientId, @staffid, @testtype, @totalAmount, 'Pending', 'Cash', @BillingDate, NOW())";
+
+                    MySqlParameter[] billingParams = {
                     new MySqlParameter("@ReferenceNum", referenceNo),
                     new MySqlParameter("@PatientId", patientID),
                     new MySqlParameter("@staffid", UserSession.StaffId),
-                    new MySqlParameter("@testtype" , inClause),
-                    new MySqlParameter("@totalAmount",total),
+                    new MySqlParameter("@testtype" , test.TestID),
+                    new MySqlParameter("@totalAmount", total),
                     new MySqlParameter("@BillingDate", Date),
+                    
                     };
-                    Database.ExecuteNonQuery(query, parameters);
+
+                    Database.ExecuteNonQuery(billingQuery, billingParams);
                 }
-           
+            }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while inserting billing data:\n" + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error inserting into Billing: " + ex.Message);
             }
         }
+
 
         private void SaveStyledPDF()
         {
