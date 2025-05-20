@@ -17,16 +17,13 @@ namespace TrustWell_Hospital
         private string patientName;
         private string referenceNo;
         private string contactNumber;
-        private int   patientID;
-        
 
-        public Labpayment2(string patientName, string referenceNo, string contactNumber,int  patientID)
+        public Labpayment2(string patientName, string referenceNo, string contactNumber)
         {
             InitializeComponent();
             this.patientName = patientName;
             this.referenceNo = referenceNo;
             this.contactNumber = contactNumber;
-            this.patientID = patientID;
 
             LoadLabpayment2();
 
@@ -178,7 +175,7 @@ namespace TrustWell_Hospital
             }
 
             this.Hide();
-            Labbill1 billForm = new Labbill1(cart, patientName, referenceNo, contactNumber, patientID);
+            Labbill1 billForm = new Labbill1(cart, patientName, referenceNo, contactNumber);
             billForm.StartPosition = FormStartPosition.CenterScreen;
             billForm.ShowDialog();
             this.Close();
