@@ -1,1 +1,13 @@
 packages
+*.vsidx
+.vs/TrustWell Hospital/v17/DocumentLayout.backup.json
+.vs/TrustWell Hospital/v17/.suo
+.vs/TrustWell Hospital/v17/.suo
+/.vs
+.vs/TrustWell Hospital/v17/DocumentLayout.backup.json
+*.json
+.vs/TrustWell Hospital/v17/DocumentLayout.json
+.vs/TrustWell Hospital/v17/DocumentLayout.json
+TrustWell Hospital/.vs/TrustWell Hospital.csproj.dtbcache.json
+*.cache
+TrustWell Hospital/TrustWell Hospital.csproj
