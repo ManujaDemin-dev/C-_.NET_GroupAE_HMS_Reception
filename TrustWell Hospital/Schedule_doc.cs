@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Guna.UI.WinForms;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +10,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.text.pdf.draw;
+using System.IO;
+using System.Net;
 
 namespace TrustWell_Hospital
 {
@@ -98,9 +104,12 @@ namespace TrustWell_Hospital
 
         }
 
+        private string doctorAppointmentdate;
+
         private void button3_Click(object sender, EventArgs e)
         {
             label17.Text = dateTimePicker1.Value.DayOfWeek.ToString();
+            doctorAppointmentdate = dateTimePicker1.Value.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -121,5 +130,21 @@ namespace TrustWell_Hospital
             }
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(label18.Text == "")
+            {
+                MessageBox.Show("Error!Please choose a doctor appointment date");
+
+            }
+            else
+            {
+                DocBillPrint popup = new DocBillPrint(Docid,DoctorName,Special,Fee, PatientName , DateTime.Now.ToString("yyyy-MM-dd") + PatientName , PatientMobile , doctorAppointmentdate );
+                popup.StartPosition = FormStartPosition.CenterParent;
+                popup.ShowDialog();
+            }
+        }
+
     }
 }

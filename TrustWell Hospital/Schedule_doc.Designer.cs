@@ -214,9 +214,8 @@
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(635, 396);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(224, 36);
+            this.label18.Size = new System.Drawing.Size(0, 36);
             this.label18.TabIndex = 20;
-            this.label18.Text = "Choosen date : ";
             // 
             // label17
             // 
@@ -253,6 +252,7 @@
             this.button2.TabIndex = 16;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
