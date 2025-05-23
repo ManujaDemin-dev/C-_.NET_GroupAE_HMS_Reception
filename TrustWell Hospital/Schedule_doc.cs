@@ -133,14 +133,15 @@ namespace TrustWell_Hospital
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(label18.Text == "")
+            if (label18.Text == "")
             {
                 MessageBox.Show("Error!Please choose a doctor appointment date");
+                //hellowww
 
             }
             else
             {
-                DocBillPrint popup = new DocBillPrint(Docid,DoctorName,Special,Fee, PatientName , DateTime.Now.ToString("yyyy-MM-dd") + PatientName , PatientMobile , doctorAppointmentdate );
+                DocBillPrint popup = new DocBillPrint(Docid, DoctorName, Special, Fee, PatientName, DateTime.Now.ToString("yyyy-MM-dd") + PatientName, PatientMobile, doctorAppointmentdate);
                 popup.StartPosition = FormStartPosition.CenterParent;
                 popup.ShowDialog();
             }
