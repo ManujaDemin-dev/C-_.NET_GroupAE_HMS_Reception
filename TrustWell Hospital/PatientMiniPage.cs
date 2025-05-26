@@ -49,6 +49,11 @@ namespace TrustWell_Hospital
                 lblAddress.Text = "Address: " + row["Address"].ToString();
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 } 
