@@ -27,6 +27,8 @@ namespace TrustWell_Hospital
         private string PatientName;
         private string RefNo;
         private string PatientMobile;
+        private bool isDoctorAvailable = false;
+
         public Schedule_doc(int doctorID,string docName,string spec, int fees,string patientname , string refno ,string patientmobile)
         {
             InitializeComponent();
@@ -94,9 +96,10 @@ namespace TrustWell_Hospital
 
 
 
+
         private void Schedule_doc_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -118,33 +121,41 @@ namespace TrustWell_Hospital
 
             if (docDay.Contains(selectedDay))
             {
-                MessageBox.Show("Doctor is available on this day :)");
-                label18.Text = "Doctor is available on this day :)"; 
+                MessageBox.Show("Doctor is available on the selected date");
+                label18.Text = "Doctor is available on teh selected date";
+                isDoctorAvailable = true; 
             }
             else
             {
-
                 MessageBox.Show("Doctor is not available on this selected day.");
-                label18.Text = "Doctor is not available ";
-
+                label18.Text = "Doctor is not available.";
+                isDoctorAvailable = false;
             }
+
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (label18.Text == "")
+            if (string.IsNullOrEmpty(label17.Text))
             {
-                MessageBox.Show("Error!Please choose a doctor appointment date");
-                //hellowww
+                MessageBox.Show("Please select an appointment date first.");
+                return;
+            }
 
-            }
-            else
+            if (!isDoctorAvailable)
             {
-                DocBillPrint popup = new DocBillPrint(Docid, DoctorName, Special, Fee, PatientName, DateTime.Now.ToString("yyyy-MM-dd") + PatientName, PatientMobile, doctorAppointmentdate);
-                popup.StartPosition = FormStartPosition.CenterParent;
-                popup.ShowDialog();
+                MessageBox.Show("Doctor is not available on the selected date. Please choose a valid day.");
+                return;
             }
+
+            // Generate ref no properly (you had an issue here too)
+            string refNo = DateTime.Now.ToString("yyyyMMddHHmmss") + "_" + PatientName;
+
+            // Proceed to bill
+            DocBillPrint popup = new DocBillPrint(Docid, DoctorName, Special, Fee, PatientName, refNo, PatientMobile, doctorAppointmentdate);
+            popup.StartPosition = FormStartPosition.CenterParent;
+            popup.ShowDialog();
         }
 
     }
