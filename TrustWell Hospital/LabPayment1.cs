@@ -88,5 +88,15 @@ namespace TrustWell_Hospital
         {
 
         }
+
+        private void gunaTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

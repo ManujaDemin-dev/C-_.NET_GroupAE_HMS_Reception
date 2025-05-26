@@ -61,7 +61,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.gName = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.submit = new System.Windows.Forms.Button();
+            this.submit = new Guna.UI.WinForms.GunaButton();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.age)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -281,11 +281,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.label1.Location = new System.Drawing.Point(76, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 20);
+            this.label1.Size = new System.Drawing.Size(149, 23);
             this.label1.TabIndex = 17;
             this.label1.Text = "Patient Basic Info";
             // 
@@ -361,11 +361,11 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.label14.Location = new System.Drawing.Point(69, 325);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(176, 20);
+            this.label14.Size = new System.Drawing.Size(165, 23);
             this.label14.TabIndex = 20;
             this.label14.Text = "Guardian Basic Info";
             // 
@@ -480,22 +480,35 @@
             // 
             // submit
             // 
-            this.submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.submit.ForeColor = System.Drawing.SystemColors.Control;
-            this.submit.Location = new System.Drawing.Point(592, 514);
-            this.submit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.submit.AnimationHoverSpeed = 0.07F;
+            this.submit.AnimationSpeed = 0.03F;
+            this.submit.BackColor = System.Drawing.Color.Transparent;
+            this.submit.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.submit.BorderColor = System.Drawing.Color.Transparent;
+            this.submit.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.submit.FocusedColor = System.Drawing.Color.Empty;
+            this.submit.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submit.ForeColor = System.Drawing.Color.White;
+            this.submit.Image = null;
+            this.submit.ImageSize = new System.Drawing.Size(20, 20);
+            this.submit.Location = new System.Drawing.Point(519, 508);
             this.submit.Name = "submit";
-            this.submit.Size = new System.Drawing.Size(153, 40);
+            this.submit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.submit.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.submit.OnHoverForeColor = System.Drawing.Color.White;
+            this.submit.OnHoverImage = null;
+            this.submit.OnPressedColor = System.Drawing.Color.Black;
+            this.submit.Radius = 8;
+            this.submit.Size = new System.Drawing.Size(160, 42);
             this.submit.TabIndex = 21;
             this.submit.Text = "Add patient";
-            this.submit.UseVisualStyleBackColor = false;
-            this.submit.Click += new System.EventHandler(this.submit_Click);
+            this.submit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Addpatients2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
             this.Controls.Add(this.submit);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
@@ -549,6 +562,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox gName;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button submit;
+        private Guna.UI.WinForms.GunaButton submit;
     }
 }

@@ -90,5 +90,10 @@ namespace TrustWell_Hospital
         {
 
         }
+
+        private void gunaLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

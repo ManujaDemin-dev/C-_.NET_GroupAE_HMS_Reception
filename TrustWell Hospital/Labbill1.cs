@@ -55,10 +55,10 @@ namespace TrustWell_Hospital
         {
             var sb = new System.Text.StringBuilder();
             sb.AppendLine("======= LAB TEST BILL =======");
-            sb.AppendLine($"Date: {DateTime.Now:yyyy-MM-dd HH:mm:ss}");
-            sb.AppendLine($"Patient Name: {patientName}");
-            sb.AppendLine($"Reference No: {referenceNo}");
-            sb.AppendLine($"Contact No: {contactNumber}");
+            //sb.AppendLine($"Date: {DateTime.Now:yyyy-MM-dd HH:mm:ss}");
+            //sb.AppendLine($"Patient Name: {patientName}");
+            //sb.AppendLine($"Reference No: {referenceNo}");
+            //sb.AppendLine($"Contact No: {contactNumber}");
             sb.AppendLine("-----------------------------");
             sb.AppendLine("Tests:");
             foreach (var test in selectedTests)
@@ -72,12 +72,12 @@ namespace TrustWell_Hospital
             return sb.ToString();
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void Cancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnPrint_Click(object sender, EventArgs e)
+        private void Print_Click(object sender, EventArgs e)
         {
             SaveStyledPDF();
 
@@ -212,6 +212,12 @@ namespace TrustWell_Hospital
                 MessageBox.Show($"Error saving PDF: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 
     public class CustomPdfPageEvent : PdfPageEventHelper
