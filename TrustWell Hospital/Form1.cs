@@ -148,5 +148,10 @@ namespace TrustWell_Hospital
         {
 
         }
+
+        private void cuiPictureBox1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

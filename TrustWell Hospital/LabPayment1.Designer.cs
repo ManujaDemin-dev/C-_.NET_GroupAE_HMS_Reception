@@ -49,7 +49,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
-            this.label1.Location = new System.Drawing.Point(219, 129);
+            this.label1.Location = new System.Drawing.Point(234, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 28);
             this.label1.TabIndex = 0;
@@ -102,14 +102,14 @@
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.dataGridView1.Location = new System.Drawing.Point(210, 383);
+            this.dataGridView1.Location = new System.Drawing.Point(73, 348);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 60;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(876, 280);
+            this.dataGridView1.Size = new System.Drawing.Size(1159, 348);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -157,7 +157,7 @@
             this.txtname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
             this.txtname.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtname.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.txtname.Location = new System.Drawing.Point(476, 129);
+            this.txtname.Location = new System.Drawing.Point(478, 117);
             this.txtname.Name = "txtname";
             this.txtname.PasswordChar = '\0';
             this.txtname.Radius = 7;
@@ -176,7 +176,7 @@
             this.txtmobile.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
             this.txtmobile.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtmobile.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.txtmobile.Location = new System.Drawing.Point(478, 205);
+            this.txtmobile.Location = new System.Drawing.Point(478, 196);
             this.txtmobile.Name = "txtmobile";
             this.txtmobile.PasswordChar = '\0';
             this.txtmobile.Radius = 7;
@@ -197,7 +197,7 @@
             this.btnsearch.ForeColor = System.Drawing.Color.White;
             this.btnsearch.Image = null;
             this.btnsearch.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnsearch.Location = new System.Drawing.Point(970, 279);
+            this.btnsearch.Location = new System.Drawing.Point(881, 261);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnsearch.OnHoverBorderColor = System.Drawing.Color.Black;
