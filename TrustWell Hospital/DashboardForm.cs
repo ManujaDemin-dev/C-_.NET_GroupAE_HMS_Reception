@@ -123,5 +123,15 @@ namespace TrustWell_Hospital
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new Appoinmentscs());
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

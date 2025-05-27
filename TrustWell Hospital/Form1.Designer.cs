@@ -50,7 +50,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 12F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.label2.Location = new System.Drawing.Point(52, 282);
+            this.label2.Location = new System.Drawing.Point(78, 282);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 25);
             this.label2.TabIndex = 15;
@@ -62,7 +62,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 12F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.label3.Location = new System.Drawing.Point(35, 351);
+            this.label3.Location = new System.Drawing.Point(61, 351);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 25);
             this.label3.TabIndex = 7;
@@ -71,19 +71,21 @@
             // 
             // cuiPictureBox1
             // 
+            this.cuiPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cuiPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.cuiPictureBox1.BackgroundImage = global::TrustWell_Hospital.Properties.Resources.logo;
             this.cuiPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cuiPictureBox1.Content = null;
             this.cuiPictureBox1.ImageTint = System.Drawing.Color.White;
-            this.cuiPictureBox1.Location = new System.Drawing.Point(1274, 9);
+            this.cuiPictureBox1.Location = new System.Drawing.Point(1735, 2);
             this.cuiPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cuiPictureBox1.Name = "cuiPictureBox1";
             this.cuiPictureBox1.OutlineThickness = 1F;
             this.cuiPictureBox1.PanelOutlineColor = System.Drawing.Color.Empty;
             this.cuiPictureBox1.Rotation = 0;
             this.cuiPictureBox1.Rounding = new System.Windows.Forms.Padding(8);
-            this.cuiPictureBox1.Size = new System.Drawing.Size(188, 162);
+            this.cuiPictureBox1.Size = new System.Drawing.Size(167, 150);
             this.cuiPictureBox1.TabIndex = 6;
             this.cuiPictureBox1.Load += new System.EventHandler(this.cuiPictureBox1_Load);
             // 
@@ -91,9 +93,9 @@
             // 
             this.cuiLabel1.BackColor = System.Drawing.Color.Transparent;
             this.cuiLabel1.Content = "TrustWell\\ Hospital";
-            this.cuiLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cuiLabel1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cuiLabel1.HorizontalAlignment = System.Drawing.StringAlignment.Center;
-            this.cuiLabel1.Location = new System.Drawing.Point(1478, 25);
+            this.cuiLabel1.Location = new System.Drawing.Point(1360, 13);
             this.cuiLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cuiLabel1.Name = "cuiLabel1";
             this.cuiLabel1.Size = new System.Drawing.Size(425, 58);
@@ -107,10 +109,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1550, 63);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1432, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(236, 22);
+            this.label1.Size = new System.Drawing.Size(275, 28);
             this.label1.TabIndex = 8;
             this.label1.Text = "trustwellhospital@gmail.com";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
@@ -119,10 +121,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1550, 95);
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(1435, 83);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(239, 22);
+            this.label4.Size = new System.Drawing.Size(271, 28);
             this.label4.TabIndex = 9;
             this.label4.Text = "No.55, Pitipana, Homagama.";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -138,12 +140,12 @@
             this.cuiPanel1.Controls.Add(this.label5);
             this.cuiPanel1.Controls.Add(this.label2);
             this.cuiPanel1.Controls.Add(this.label3);
-            this.cuiPanel1.Location = new System.Drawing.Point(792, 219);
+            this.cuiPanel1.Location = new System.Drawing.Point(685, 178);
             this.cuiPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cuiPanel1.Name = "cuiPanel1";
             this.cuiPanel1.OutlineThickness = 1F;
             this.cuiPanel1.PanelColor = System.Drawing.Color.White;
-            this.cuiPanel1.PanelOutlineColor = System.Drawing.Color.White;
+            this.cuiPanel1.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
             this.cuiPanel1.Rounding = new System.Windows.Forms.Padding(30);
             this.cuiPanel1.Size = new System.Drawing.Size(640, 577);
             this.cuiPanel1.TabIndex = 18;
@@ -196,7 +198,7 @@
             this.textBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
             this.textBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.textBox2.Location = new System.Drawing.Point(190, 336);
+            this.textBox2.Location = new System.Drawing.Point(221, 336);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Padding = new System.Windows.Forms.Padding(5, 2, 5, 2);
@@ -217,7 +219,7 @@
             this.textBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
             this.textBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.textBox1.Location = new System.Drawing.Point(190, 270);
+            this.textBox1.Location = new System.Drawing.Point(218, 270);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Padding = new System.Windows.Forms.Padding(5, 2, 5, 2);
@@ -264,6 +266,7 @@
             this.Controls.Add(this.cuiPictureBox1);
             this.Name = "Form1";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);

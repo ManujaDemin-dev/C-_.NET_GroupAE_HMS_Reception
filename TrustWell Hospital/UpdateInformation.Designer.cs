@@ -39,6 +39,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.email = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.gender = new System.Windows.Forms.TextBox();
             this.gEmail = new System.Windows.Forms.TextBox();
             this.contact = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -56,7 +57,6 @@
             this.address = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.gender = new System.Windows.Forms.TextBox();
             this.pGender = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -199,6 +199,15 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33433F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1018, 118);
             this.tableLayoutPanel2.TabIndex = 24;
+            // 
+            // gender
+            // 
+            this.gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gender.Location = new System.Drawing.Point(157, 41);
+            this.gender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gender.Name = "gender";
+            this.gender.Size = new System.Drawing.Size(287, 26);
+            this.gender.TabIndex = 27;
             // 
             // gEmail
             // 
@@ -344,7 +353,7 @@
             this.update.AnimationHoverSpeed = 0.07F;
             this.update.AnimationSpeed = 0.03F;
             this.update.BackColor = System.Drawing.Color.Transparent;
-            this.update.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.update.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
             this.update.BorderColor = System.Drawing.Color.Transparent;
             this.update.DialogResult = System.Windows.Forms.DialogResult.None;
             this.update.FocusedColor = System.Drawing.Color.Empty;
@@ -422,15 +431,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.78864F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(892, 274);
             this.tableLayoutPanel1.TabIndex = 23;
-            // 
-            // gender
-            // 
-            this.gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gender.Location = new System.Drawing.Point(157, 41);
-            this.gender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gender.Name = "gender";
-            this.gender.Size = new System.Drawing.Size(287, 26);
-            this.gender.TabIndex = 27;
             // 
             // pGender
             // 

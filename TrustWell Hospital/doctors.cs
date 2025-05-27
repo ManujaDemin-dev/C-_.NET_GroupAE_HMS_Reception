@@ -73,10 +73,10 @@ namespace TrustWell_Hospital
         {
             string query = "SELECT * FROM Doc_specialization";
             DataTable dt = Database.ExecuteQuery(query, null);
-            comboBox1.DisplayMember = "Specialization";
-            comboBox1.ValueMember = "specialization_id";
-            comboBox1.DataSource = dt;
-            comboBox1.SelectedIndex = -1;
+            ComboBox1.DisplayMember = "Specialization";
+            ComboBox1.ValueMember = "specialization_id";
+            ComboBox1.DataSource = dt;
+            ComboBox1.SelectedIndex = -1;
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -143,6 +143,16 @@ namespace TrustWell_Hospital
                 popup.StartPosition = FormStartPosition.CenterParent;
                 popup.ShowDialog();
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
