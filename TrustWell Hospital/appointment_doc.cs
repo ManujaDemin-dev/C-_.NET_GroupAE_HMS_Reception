@@ -76,8 +76,9 @@ namespace TrustWell_Hospital
             if (e.RowIndex >= 0 && gunaDataGridViewPatients.Columns[e.ColumnIndex].Name == "Add")
             {
                 string PatientName = gunaDataGridViewPatients.Rows[e.RowIndex].Cells["PatientName"].Value.ToString();
+                string Patientid = gunaDataGridViewPatients.Rows[e.RowIndex].Cells["PatientID"].Value.ToString();
                 string Contact = gunaDataGridViewPatients.Rows[e.RowIndex].Cells["ContactNumber"].Value.ToString();
-                Schedule_doc popup = new Schedule_doc(doctorid,doctorName,special,fees,PatientName,PatientName+doctorName,Contact);
+                Schedule_doc popup = new Schedule_doc(doctorid,doctorName,special,fees,PatientName,PatientName+doctorName,Contact , Patientid);
                 popup.StartPosition = FormStartPosition.CenterParent;
                 popup.ShowDialog();
             }
