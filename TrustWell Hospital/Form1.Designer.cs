@@ -42,9 +42,7 @@
             this.textBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cuiPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -140,12 +138,12 @@
             this.cuiPanel1.Controls.Add(this.label5);
             this.cuiPanel1.Controls.Add(this.label2);
             this.cuiPanel1.Controls.Add(this.label3);
-            this.cuiPanel1.Location = new System.Drawing.Point(792, 218);
+            this.cuiPanel1.Location = new System.Drawing.Point(792, 219);
             this.cuiPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cuiPanel1.Name = "cuiPanel1";
             this.cuiPanel1.OutlineThickness = 1F;
             this.cuiPanel1.PanelColor = System.Drawing.Color.White;
-            this.cuiPanel1.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            this.cuiPanel1.PanelOutlineColor = System.Drawing.Color.White;
             this.cuiPanel1.Rounding = new System.Windows.Forms.Padding(30);
             this.cuiPanel1.Size = new System.Drawing.Size(640, 577);
             this.cuiPanel1.TabIndex = 18;
@@ -251,22 +249,12 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Welcome to,";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1902, 1033);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.cuiPanel1);
@@ -274,7 +262,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cuiLabel1);
             this.Controls.Add(this.cuiPictureBox1);
-            this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -282,7 +269,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.cuiPanel1.ResumeLayout(false);
             this.cuiPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,7 +288,6 @@
         private Guna.UI.WinForms.GunaTextBox textBox1;
         private Guna.UI.WinForms.GunaButton button1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
