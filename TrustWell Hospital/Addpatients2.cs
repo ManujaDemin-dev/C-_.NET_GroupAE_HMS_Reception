@@ -7,10 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using WindowsFormsApp1;
+using System.Text.RegularExpressions;
 
 namespace TrustWell_Hospital
 {
-    public partial class Addpatients2: UserControl
+    public partial class Addpatients2 : UserControl
     {
         private string _name;
         private string _nic;
@@ -38,36 +41,14 @@ namespace TrustWell_Hospital
         {
             this.dob.Format = DateTimePickerFormat.Custom;
             this.dob.CustomFormat = "yyyy - MMM - dd";
-
-            DateTime dob = this.dob.Value;
-            DateTime today = DateTime.Today;
-
-            int age = today.Year - dob.Year;
-
-
-            //birthday has not arrived yet..
-            if (dob.Date > today.AddYears(-age))
-            {
-                age--;          //age is 1 year younger
-            }
-
-            this.age.Text = age.ToString();
         }
-
-        private void submit_Click(object sender, EventArgs e)
+        private void submit_Click_1(object sender, EventArgs e)
         {
             //validation
             if (string.IsNullOrWhiteSpace(pName.Text))
             {
                 MessageBox.Show("Please enter the patient's name.");
                 pName.Focus();
-                return;
-            }
-
-            if (this.age.Value == 0)
-            {
-                MessageBox.Show("Please enter the patient's age.");
-                this.age.Focus();
                 return;
             }
 
@@ -113,12 +94,6 @@ namespace TrustWell_Hospital
                 return;
             }
 
-            if (this.age.Value < 0 || this.age.Value > 120)
-            {
-                MessageBox.Show("Please enter a valid age.");
-                this.age.Focus();
-                return;
-            }
 
             if (!this.phone.Text.All(char.IsDigit) || this.phone.Text.Length != 10)
             {
@@ -127,7 +102,10 @@ namespace TrustWell_Hospital
                 return;
             }
 
-            if (!this.email.Text.Contains("@") || !this.email.Text.Contains("."))
+            string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            bool isValidEmail = Regex.IsMatch(this.email.Text, emailPattern);
+
+            if (!isValidEmail)
             {
                 MessageBox.Show("Please enter a valid email address.");
                 this.email.Focus();
@@ -135,26 +113,9 @@ namespace TrustWell_Hospital
             }
 
 
-            if (!this.contact.Text.All(char.IsDigit) || this.contact.Text.Length != 10)
-            {
-                MessageBox.Show("Please enter a valid phone number.");
-                this.contact.Focus();
-                return;
-            }
 
-            if (!this.gEmail.Text.Contains("@") || !this.gEmail.Text.Contains("."))
-            {
-                MessageBox.Show("Please enter a valid email address.");
-                this.gEmail.Focus();
-                return;
-            }
-
-
-
-            //if validation is complete..
 
             string name = this.pName.Text.Trim();
-            int age = (int)this.age.Value;
             string dob = this.dob.Value.ToString("yyyy-MM-dd");
             string gender = this.gender.SelectedItem.ToString();
             string address = this.address.Text.Trim();
@@ -164,11 +125,135 @@ namespace TrustWell_Hospital
 
             string gName = this.gName.Text.Trim();
             string gPhone = this.contact.Text.Trim();
-            string gGender = this.gGender.SelectedItem.ToString();
+            string gGender = this.gGender.SelectedItem != null ? this.gGender.SelectedItem.ToString() : null;
             string relation = this.relation.Text.Trim();
             string Gemail = this.gEmail.Text.Trim();
             string gNIC = this.gNIC.Text.Trim();
 
+
+            bool anyGuardianInfoFilled =
+                !string.IsNullOrWhiteSpace(gName) ||
+                !string.IsNullOrWhiteSpace(relation) ||
+                !string.IsNullOrWhiteSpace(gPhone) ||
+                !string.IsNullOrWhiteSpace(gNIC) ||
+                !string.IsNullOrWhiteSpace(Gemail) ||
+                !string.IsNullOrWhiteSpace(gGender);
+
+            bool allGuardianInfoFilled =
+                !string.IsNullOrWhiteSpace(gName) &&
+                !string.IsNullOrWhiteSpace(relation) &&
+                !string.IsNullOrWhiteSpace(gPhone) &&
+                !string.IsNullOrWhiteSpace(gNIC) &&
+                !string.IsNullOrWhiteSpace(Gemail) &&
+                !string.IsNullOrWhiteSpace(gGender);
+
+            if (anyGuardianInfoFilled && !allGuardianInfoFilled)
+            {
+                MessageBox.Show("Please fill in all guardian fields or leave them all empty.");
+                return;
+            }
+
+            if (allGuardianInfoFilled)
+            {
+
+                if (!this.contact.Text.All(char.IsDigit) || this.contact.Text.Length != 10)
+                {
+                    MessageBox.Show("Please enter a valid guardian phone number.");
+                    this.contact.Focus();
+                    return;
+                }
+
+                bool isGuardianEmailValid = Regex.IsMatch(this.gEmail.Text, emailPattern);
+                if (!isGuardianEmailValid)
+                {
+                    MessageBox.Show("Please enter a valid guardian email address.");
+                    this.gEmail.Focus();
+                    return;
+                }
+
+
+            }
+
+
+
+
+            try
+            {
+                string query = @"INSERT INTO Patients (PatientName, patientNIC, Gender, DateOfBirth, ContactNumber, Email, Address)
+                     VALUES (@name, @nic, @gender, @dob, @contact, @email, @address)";
+
+                MySqlParameter[] parameters = {
+                    new MySqlParameter("@name", name),
+                    new MySqlParameter("@nic", NIC),
+                    new MySqlParameter("@gender", gender),
+                    new MySqlParameter("@dob", dob),
+                    new MySqlParameter("@contact", phone),
+                    new MySqlParameter("@email", email),
+                    new MySqlParameter("@address",address)
+                };
+
+                Database.ExecuteNonQuery(query, parameters);
+                MessageBox.Show("Patient added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //retreiving patient id
+
+                string getIdQuery = "SELECT PatientID FROM Patients WHERE patientNIC = @nic";
+                MySqlParameter[] getIdParams = {
+                    new MySqlParameter("@nic", NIC)
+                };
+
+                DataTable result = Database.ExecuteQuery(getIdQuery, getIdParams);
+
+                int patientId = 0;
+                if (result.Rows.Count > 0)
+                {
+                    patientId = int.Parse(result.Rows[0]["PatientID"].ToString());
+                    //MessageBox.Show("id fetched");
+
+                }
+
+
+                //check if emergency contact details are available
+
+                if (allGuardianInfoFilled)
+                {
+
+                    // Insert the emergency contact data into the database
+
+                    string ecQuery = @"INSERT INTO EmergeencyContacts (PatientID, ContactName, Gender, Relationship, NIC, ContactNumber, Email)
+                           VALUES (@pid, @ecName, @ecGender, @relation, @ecNIC, @ecContact, @ecEmail)";
+
+                    MySqlParameter[] ecParams = {
+                        new MySqlParameter("@pid", patientId),
+                        new MySqlParameter("@ecName", gName),
+                        new MySqlParameter("@ecGender", gGender),
+                        new MySqlParameter("@relation", relation),
+                        new MySqlParameter("@ecNIC", gNIC),
+                        new MySqlParameter("@ecContact", gPhone),
+                        new MySqlParameter("@ecEmail",  Gemail)
+                    };
+
+                    Database.ExecuteNonQuery(ecQuery, ecParams);
+                    MessageBox.Show("Guardian details added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+
+
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show($"Database error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Please enter valid numeric values for age or contact fields.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Unexpected error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
+
