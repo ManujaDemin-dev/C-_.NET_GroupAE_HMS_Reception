@@ -20,6 +20,37 @@ namespace TrustWell_Hospital
             InitializeComponent();
             button1.Click += new EventHandler(Login_Click);
         }
+        private bool IsValidEmailSimple(string email)
+        {
+            //Check if there any empty or have empty spaces
+            if (string.IsNullOrWhiteSpace(email) || email.Contains(" "))
+                return false;
+
+            //Find where the "@" and last "."
+            int atIndex = email.IndexOf("@");
+            int dotIndex = email.LastIndexOf(".");
+
+            if (atIndex < 1 || dotIndex < atIndex + 2 || dotIndex == email.Length - 1)
+                return false;
+
+            //only one from this @
+            if (email.LastIndexOf("@") != atIndex)
+                return false;
+
+            //check the valid sysmbols,letters,characters
+            foreach (char c in email)
+            {
+                if (!char.IsLetterOrDigit(c) && c != '@' && c != '.' && c != '-' && c != '_' && c != '+')
+                    return false;
+            }
+
+            return true;
+        }
+
+        private bool IsValidPassword(string password)
+        {
+            return!string.IsNullOrWhiteSpace(password) && password.Length >= 3;
+        }
 
         //private void Form1_Load(object sender, EventArgs e)
         //{
@@ -29,12 +60,20 @@ namespace TrustWell_Hospital
         {
             string email = textBox1.Text.Trim();
             string password = textBox2.Text;
-
-            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            
+            //paste inside the button click
+            if (!IsValidEmailSimple(email))
             {
-                MessageBox.Show("Please enter both email and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter a valid email address.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            if (!IsValidPassword(password))
+            {
+                MessageBox.Show("Password must be at least 6 characters long.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+        
 
             try
             {
