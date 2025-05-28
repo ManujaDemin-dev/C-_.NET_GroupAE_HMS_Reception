@@ -33,7 +33,7 @@ namespace TrustWell_Hospital
 
         private void UpdateDateTime(object sender, EventArgs e)
         {
-            labelDate.Text = "Date: " + DateTime.Now.ToString("dd MMMM yyyy");
+            labelDate.Text = DateTime.Now.ToString("dd MMMM yyyy");
             labelTime.Text = DateTime.Now.ToString("hh:mm tt");
         }
     }
