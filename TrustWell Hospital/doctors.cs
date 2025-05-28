@@ -13,6 +13,7 @@ namespace TrustWell_Hospital
     public partial class doctors : UserControl
     {
         private int docid;
+        private int comVal;
 
         public doctors()
         {
@@ -21,20 +22,34 @@ namespace TrustWell_Hospital
             LoadDoctors();
         }
 
-        private void LoadDoctors(string name = "", int? specializationId = null)
+        private void LoadDoctors(string name = "", string specializationId = "")
         {
             //gunaDataGridView1.Columns.Add("ID", "ID");
             //gunaDataGridView1.Columns.Add("Name", "Name");
             //gunaDataGridView1.Columns.Add("Age", "Age");
 
             //^^^^^look i thought were gonna need this guys but we dont :)
-
-
             string query = "SELECT d.DoctorID, d.DoctorName, s.Specialization, d.Fees, d.ContactNumber FROM Doctors d JOIN Doc_specialization s ON d.Specialization = s.specialization_id WHERE 1=1";
 
-            MySqlParameter[] parameters = null;
+            var parameters = new List<MySqlParameter>();
 
-            DataTable dt = Database.ExecuteQuery(query, parameters);
+
+            if (!string.IsNullOrWhiteSpace(name))
+            {
+                query += " AND d.DoctorName LIKE @name ";
+                parameters.Add(new MySqlParameter("@name", "%" + name + "%"));
+                //parameters.Add(new MySqlParameter("@nic", "%" +  + "%"));
+            }
+
+            if (!string.IsNullOrWhiteSpace(specializationId))
+            {
+                query += " AND s.Specialization = @spec";
+                parameters.Add(new MySqlParameter("@spec", specializationId));
+
+            }
+
+
+            DataTable dt = Database.ExecuteQuery(query, parameters.ToArray());
 
             gunaDataGridView1.DataSource = dt;
 
@@ -58,6 +73,10 @@ namespace TrustWell_Hospital
                 gunaDataGridView1.Columns.Add(viewBtn);
             }
 
+            if (gunaDataGridView1.Columns.Contains("DoctorID"))
+            {
+                gunaDataGridView1.Columns["DoctorId"].Visible = false;
+            }
 
         }
 
@@ -139,18 +158,27 @@ namespace TrustWell_Hospital
                 string Docname = gunaDataGridView1.Rows[e.RowIndex].Cells["DoctorName"].Value.ToString();
                 string spec = gunaDataGridView1.Rows[e.RowIndex].Cells["Specialization"].Value.ToString();
                 int Docfee = Convert.ToInt32(gunaDataGridView1.Rows[e.RowIndex].Cells["Fees"].Value);
-                appointment_doc popup = new appointment_doc(Docid,Docname,spec,Docfee);
+                appointment_doc popup = new appointment_doc(Docid, Docname, spec, Docfee);
                 popup.StartPosition = FormStartPosition.CenterParent;
                 popup.ShowDialog();
             }
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
+
         private void button1_Click_1(object sender, EventArgs e)
+        {
+            //comVal = int.Parse(ComboBox1.Text);
+
+            //MessageBox.Show($"{ComboBox1.Text}");
+
+            LoadDoctors(TextBox1.Text, ComboBox1.Text);
+        }
+
+        private void TextBox1_TextChanged_1(object sender, EventArgs e)
         {
 
         }
