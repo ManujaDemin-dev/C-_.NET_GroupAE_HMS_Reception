@@ -121,9 +121,9 @@
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
             this.gunaPanel1.Controls.Add(this.label1);
-            this.gunaPanel1.Location = new System.Drawing.Point(12, 8);
+            this.gunaPanel1.Location = new System.Drawing.Point(-1, 2);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(1160, 74);
+            this.gunaPanel1.Size = new System.Drawing.Size(1173, 74);
             this.gunaPanel1.TabIndex = 7;
             // 
             // label1
@@ -256,6 +256,7 @@
             this.MinimizeBox = false;
             this.Name = "PatientMiniPage";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
             this.Load += new System.EventHandler(this.PatientMiniPage_Load);

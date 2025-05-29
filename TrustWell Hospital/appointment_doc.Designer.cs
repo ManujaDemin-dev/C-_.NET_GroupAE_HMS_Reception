@@ -55,10 +55,11 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label6.ForeColor = System.Drawing.Color.Gray;
             label6.Location = new System.Drawing.Point(555, 23);
             label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(204, 29);
+            label6.Size = new System.Drawing.Size(279, 41);
             label6.TabIndex = 7;
             label6.Text = "New Appointment";
             // 
@@ -79,7 +80,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gunaDataGridViewPatients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gunaDataGridViewPatients.ColumnHeadersHeight = 25;
+            this.gunaDataGridViewPatients.ColumnHeadersHeight = 35;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -89,7 +90,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gunaDataGridViewPatients.DefaultCellStyle = dataGridViewCellStyle3;
             this.gunaDataGridViewPatients.EnableHeadersVisualStyles = false;
-            this.gunaDataGridViewPatients.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gunaDataGridViewPatients.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.gunaDataGridViewPatients.Location = new System.Drawing.Point(43, 239);
             this.gunaDataGridViewPatients.Name = "gunaDataGridViewPatients";
             this.gunaDataGridViewPatients.RowHeadersVisible = false;
@@ -105,13 +106,13 @@
             this.gunaDataGridViewPatients.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.gunaDataGridViewPatients.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.gunaDataGridViewPatients.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridViewPatients.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gunaDataGridViewPatients.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.gunaDataGridViewPatients.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaDataGridViewPatients.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gunaDataGridViewPatients.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.gunaDataGridViewPatients.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.gunaDataGridViewPatients.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gunaDataGridViewPatients.ThemeStyle.HeaderStyle.Height = 25;
+            this.gunaDataGridViewPatients.ThemeStyle.HeaderStyle.Height = 35;
             this.gunaDataGridViewPatients.ThemeStyle.ReadOnly = false;
             this.gunaDataGridViewPatients.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDataGridViewPatients.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -125,30 +126,30 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(40, 88);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(139, 25);
+            this.label7.Size = new System.Drawing.Size(148, 28);
             this.label7.TabIndex = 9;
             this.label7.Text = "Doctor ID : {Id}";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(40, 127);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(214, 25);
+            this.label4.Size = new System.Drawing.Size(220, 28);
             this.label4.TabIndex = 10;
             this.label4.Text = "Doctor Name : {NAME}";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(40, 167);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(214, 25);
+            this.label2.Size = new System.Drawing.Size(220, 28);
             this.label2.TabIndex = 11;
             this.label2.Text = "Doctor Name : {NAME}";
             // 
@@ -165,7 +166,8 @@
             this.Controls.Add(label6);
             this.Controls.Add(label1);
             this.Name = "appointment_doc";
-            this.Text = "appointment_doc";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Load += new System.EventHandler(this.appointment_doc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridViewPatients)).EndInit();
             this.ResumeLayout(false);

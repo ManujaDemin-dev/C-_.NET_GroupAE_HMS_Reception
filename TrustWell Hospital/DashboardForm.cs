@@ -23,10 +23,6 @@ namespace TrustWell_Hospital
             this.button5.Click += new System.EventHandler(this.button5_Click);
             this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button3.Click += new System.EventHandler(this.button3_Click);
-
-
-
-
         }
 
         private void LoadUserControl(UserControl uc)
@@ -49,13 +45,8 @@ namespace TrustWell_Hospital
         private void DashboardForm_Load(object sender, EventArgs e)
         {
            
-            this.label6.Text = $"Welcome, {UserSession.Username}";
+            this.label11.Text = $"Welcome, {UserSession.Username}";
 
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -86,21 +77,6 @@ namespace TrustWell_Hospital
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         private void Doctors_Click_1(object sender, EventArgs e)
@@ -122,6 +98,26 @@ namespace TrustWell_Hospital
         private void label9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new Appoinmentscs());
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            LoadUserControl(new Appoinmentscs());
         }
     }
 }

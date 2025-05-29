@@ -120,13 +120,40 @@ namespace TrustWell_Hospital
 
         private void button1_Click(object sender, EventArgs e)
         {
+         
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        { }
+           
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
             string selectedDay = label17.Text;
 
             if (docDay.Contains(selectedDay))
             {
                 MessageBox.Show("Doctor is available on the selected date");
                 label18.Text = "Doctor is available on teh selected date";
-                isDoctorAvailable = true; 
+                isDoctorAvailable = true;
             }
             else
             {
@@ -134,11 +161,9 @@ namespace TrustWell_Hospital
                 label18.Text = "Doctor is not available.";
                 isDoctorAvailable = false;
             }
-
-
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_2(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(label17.Text))
             {
@@ -156,10 +181,9 @@ namespace TrustWell_Hospital
             string refNo = DateTime.Now.ToString("yyyyMMddHHmmss") + "_" + PatientName;
 
             // Proceed to bill
-            DocBillPrint popup = new DocBillPrint(Docid, DoctorName, Special, Fee, PatientName, refNo, PatientMobile, doctorAppointmentdate , PatientID);
+            DocBillPrint popup = new DocBillPrint(Docid, DoctorName, Special, Fee, PatientName, refNo, PatientMobile, doctorAppointmentdate, PatientID);
             popup.StartPosition = FormStartPosition.CenterParent;
             popup.ShowDialog();
         }
-
     }
 }

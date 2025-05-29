@@ -58,7 +58,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label18);
@@ -279,12 +279,14 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(1126, 879);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 53);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Print Bill";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Bill Print";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // printDocument1
@@ -309,8 +311,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Name = "DocBillPrint";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DocBillPrint";
             this.Load += new System.EventHandler(this.DocBillPrint_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
