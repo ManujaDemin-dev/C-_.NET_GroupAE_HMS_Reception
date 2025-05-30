@@ -273,7 +273,7 @@
 
         }
 
-        #endregion
+        
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblContact;
