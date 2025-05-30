@@ -40,7 +40,11 @@
             this.txtname = new Guna.UI.WinForms.GunaTextBox();
             this.txtmobile = new Guna.UI.WinForms.GunaTextBox();
             this.btnsearch = new Guna.UI.WinForms.GunaButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +53,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
-            this.label1.Location = new System.Drawing.Point(234, 117);
+            this.label1.Location = new System.Drawing.Point(277, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 28);
             this.label1.TabIndex = 0;
@@ -61,7 +65,7 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
-            this.label2.Location = new System.Drawing.Point(213, 208);
+            this.label2.Location = new System.Drawing.Point(257, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(167, 28);
             this.label2.TabIndex = 1;
@@ -100,16 +104,17 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.dataGridView1.Location = new System.Drawing.Point(73, 348);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 299);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 60;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1159, 348);
+            this.dataGridView1.Size = new System.Drawing.Size(1288, 383);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -139,8 +144,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(533, 26);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(460, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(262, 46);
             this.label3.TabIndex = 7;
@@ -157,7 +162,7 @@
             this.txtname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
             this.txtname.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtname.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.txtname.Location = new System.Drawing.Point(478, 117);
+            this.txtname.Location = new System.Drawing.Point(468, 25);
             this.txtname.Name = "txtname";
             this.txtname.PasswordChar = '\0';
             this.txtname.Radius = 7;
@@ -176,13 +181,14 @@
             this.txtmobile.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
             this.txtmobile.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtmobile.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.txtmobile.Location = new System.Drawing.Point(478, 196);
+            this.txtmobile.Location = new System.Drawing.Point(468, 105);
             this.txtmobile.Name = "txtmobile";
             this.txtmobile.PasswordChar = '\0';
             this.txtmobile.Radius = 7;
             this.txtmobile.SelectedText = "";
             this.txtmobile.Size = new System.Drawing.Size(342, 40);
             this.txtmobile.TabIndex = 9;
+            this.txtmobile.TextChanged += new System.EventHandler(this.txtmobile_TextChanged);
             // 
             // btnsearch
             // 
@@ -197,7 +203,7 @@
             this.btnsearch.ForeColor = System.Drawing.Color.White;
             this.btnsearch.Image = null;
             this.btnsearch.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnsearch.Location = new System.Drawing.Point(881, 261);
+            this.btnsearch.Location = new System.Drawing.Point(816, 153);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnsearch.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -210,23 +216,45 @@
             this.btnsearch.Text = "Search";
             this.btnsearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1288, 85);
+            this.panel1.TabIndex = 11;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.btnsearch);
+            this.panel2.Controls.Add(this.txtname);
+            this.panel2.Controls.Add(this.txtmobile);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 85);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1288, 214);
+            this.panel2.TabIndex = 12;
+            // 
             // LabPayment1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            this.Controls.Add(this.btnsearch);
-            this.Controls.Add(this.txtmobile);
-            this.Controls.Add(this.txtname);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "LabPayment1";
             this.Size = new System.Drawing.Size(1288, 735);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -240,5 +268,7 @@
         private Guna.UI.WinForms.GunaTextBox txtname;
         private Guna.UI.WinForms.GunaTextBox txtmobile;
         private Guna.UI.WinForms.GunaButton btnsearch;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

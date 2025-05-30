@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using WindowsFormsApp1;
+using Guna.UI.WinForms;
 
 namespace TrustWell_Hospital
 {
@@ -54,6 +55,8 @@ namespace TrustWell_Hospital
             DataTable dt = Database.ExecuteQuery(query, parameters.ToArray());
 
             dataGridViewPatients.DataSource = dt;
+            if (dataGridViewPatients.Columns.Contains("PatientID"))
+                dataGridViewPatients.Columns["PatientID"].Visible = false;
 
             if (!dataGridViewPatients.Columns.Contains("View"))
             {
@@ -92,6 +95,11 @@ namespace TrustWell_Hospital
         }
 
         private void gunaLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click_1(object sender, EventArgs e)
         {
 
         }

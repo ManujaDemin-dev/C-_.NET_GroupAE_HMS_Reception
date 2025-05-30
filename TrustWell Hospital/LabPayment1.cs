@@ -47,6 +47,8 @@ namespace TrustWell_Hospital
             DataTable dt = Database.ExecuteQuery(query, parameters.ToArray());
 
             dataGridView1.DataSource = dt;
+            if (dataGridView1.Columns.Contains("PatientID"))
+                dataGridView1.Columns["PatientID"].Visible = false;
 
             if (!dataGridView1.Columns.Contains("View"))
             {
@@ -95,6 +97,11 @@ namespace TrustWell_Hospital
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtmobile_TextChanged(object sender, EventArgs e)
         {
 
         }

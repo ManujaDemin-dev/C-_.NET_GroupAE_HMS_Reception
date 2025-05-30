@@ -291,6 +291,7 @@
             this.Cancel.TabIndex = 2;
             this.Cancel.Text = "Cancel";
             this.Cancel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Cancel.Click += new System.EventHandler(this.Cancel_Click_1);
             // 
             // Labbill1
             // 

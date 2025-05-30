@@ -70,7 +70,7 @@ namespace TrustWell_Hospital
                         DataRow row = guardianDt.Rows[0];
 
                         gName.Text = row["ContactName"].ToString();
-                        gender.Text = row["Gender"].ToString();
+                        Ggender.Text = row["Gender"].ToString();
                         gNIC.Text = row["NIC"].ToString();
                         relation.Text = row["Relationship"].ToString();
                         contact.Text = row["ContactNumber"].ToString();
@@ -131,7 +131,7 @@ namespace TrustWell_Hospital
 
                 MySqlParameter[] guardianParams = {
             new MySqlParameter("@gname", gName.Text.Trim()),
-            new MySqlParameter("@ggender", gender.Text.Trim()),
+            new MySqlParameter("@ggender", Ggender.Text.Trim()),
             new MySqlParameter("@gnic", gNIC.Text.Trim()),
             new MySqlParameter("@relation", relation.Text.Trim()),
             new MySqlParameter("@gcontact", contact.Text.Trim()),
@@ -148,6 +148,7 @@ namespace TrustWell_Hospital
             {
                 MessageBox.Show("Update failed: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            this.Close();
         }
 
         private void pName_TextChanged(object sender, EventArgs e)

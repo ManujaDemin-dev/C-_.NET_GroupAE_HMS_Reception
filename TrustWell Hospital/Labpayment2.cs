@@ -177,10 +177,10 @@ namespace TrustWell_Hospital
                 return;
             }
 
-            this.Hide();
+
             Labbill1 billForm = new Labbill1(cart, patientName, referenceNo, contactNumber, patientID);
             billForm.StartPosition = FormStartPosition.CenterScreen;
-            billForm.ShowDialog();
+            billForm.Show();
             this.Close();
         }
 

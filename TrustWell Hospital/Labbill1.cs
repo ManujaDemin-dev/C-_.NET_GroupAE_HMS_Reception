@@ -218,6 +218,10 @@ namespace TrustWell_Hospital
 
         }
 
+        private void Cancel_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
     public class CustomPdfPageEvent : PdfPageEventHelper

@@ -44,9 +44,11 @@
             this.btnsearch = new Guna.UI.WinForms.GunaButton();
             this.btnToggleCart = new Guna.UI.WinForms.GunaButton();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cartDataGridView)).BeginInit();
             this.panelCart.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -89,13 +91,13 @@
             this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView1.EnableHeadersVisualStyles = false;
             this.DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.DataGridView1.Location = new System.Drawing.Point(12, 226);
+            this.DataGridView1.Location = new System.Drawing.Point(12, 221);
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.RowHeadersVisible = false;
             this.DataGridView1.RowHeadersWidth = 60;
             this.DataGridView1.RowTemplate.Height = 24;
             this.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView1.Size = new System.Drawing.Size(592, 374);
+            this.DataGridView1.Size = new System.Drawing.Size(592, 379);
             this.DataGridView1.TabIndex = 5;
             this.DataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -148,13 +150,13 @@
             this.cartDataGridView.DefaultCellStyle = dataGridViewCellStyle6;
             this.cartDataGridView.EnableHeadersVisualStyles = false;
             this.cartDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cartDataGridView.Location = new System.Drawing.Point(3, 4);
+            this.cartDataGridView.Location = new System.Drawing.Point(3, -11);
             this.cartDataGridView.Name = "cartDataGridView";
             this.cartDataGridView.RowHeadersVisible = false;
             this.cartDataGridView.RowHeadersWidth = 60;
             this.cartDataGridView.RowTemplate.Height = 24;
             this.cartDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cartDataGridView.Size = new System.Drawing.Size(535, 248);
+            this.cartDataGridView.Size = new System.Drawing.Size(535, 263);
             this.cartDataGridView.TabIndex = 5;
             this.cartDataGridView.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.cartDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -260,7 +262,7 @@
             this.btnsearch.ForeColor = System.Drawing.Color.White;
             this.btnsearch.Image = null;
             this.btnsearch.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnsearch.Location = new System.Drawing.Point(594, 159);
+            this.btnsearch.Location = new System.Drawing.Point(593, 152);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnsearch.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -302,14 +304,24 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Gray;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(426, 9);
+            this.label2.Location = new System.Drawing.Point(442, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(216, 37);
             this.label2.TabIndex = 11;
             this.label2.Text = "Choosing  a Test";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1182, 72);
+            this.panel1.TabIndex = 12;
             // 
             // Labpayment2
             // 
@@ -317,7 +329,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(1182, 673);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnToggleCart);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.txtname);
@@ -336,6 +348,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.cartDataGridView)).EndInit();
             this.panelCart.ResumeLayout(false);
             this.panelCart.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,5 +367,6 @@
         private Guna.UI.WinForms.GunaButton btnToggleCart;
         private Guna.UI.WinForms.GunaButton Checkout;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
     }
 }

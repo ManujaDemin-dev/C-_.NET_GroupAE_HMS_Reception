@@ -39,7 +39,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.email = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.gender = new System.Windows.Forms.TextBox();
             this.gEmail = new System.Windows.Forms.TextBox();
             this.contact = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -56,7 +55,9 @@
             this.address = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pGender = new System.Windows.Forms.TextBox();
+            this.pGender = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Ggender = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -168,7 +169,7 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 7;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.49782F));
@@ -178,7 +179,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.10044F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.6986899F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.38865F));
-            this.tableLayoutPanel2.Controls.Add(this.gender, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.Ggender, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.gEmail, 6, 2);
             this.tableLayoutPanel2.Controls.Add(this.contact, 6, 1);
             this.tableLayoutPanel2.Controls.Add(this.label21, 4, 1);
@@ -199,15 +200,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33433F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1018, 118);
             this.tableLayoutPanel2.TabIndex = 24;
-            // 
-            // gender
-            // 
-            this.gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gender.Location = new System.Drawing.Point(157, 41);
-            this.gender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gender.Name = "gender";
-            this.gender.Size = new System.Drawing.Size(287, 26);
-            this.gender.TabIndex = 27;
             // 
             // gEmail
             // 
@@ -386,7 +378,7 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 7;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.39158F));
@@ -422,18 +414,49 @@
             // 
             // pGender
             // 
+            this.pGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.pGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pGender.FormattingEnabled = true;
+            this.pGender.ItemHeight = 20;
+            this.pGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
             this.pGender.Location = new System.Drawing.Point(140, 82);
             this.pGender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pGender.Name = "pGender";
-            this.pGender.Size = new System.Drawing.Size(287, 26);
+            this.pGender.Size = new System.Drawing.Size(157, 28);
             this.pGender.TabIndex = 27;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(252, 904);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(287, 26);
+            this.textBox1.TabIndex = 27;
+            // 
+            // Ggender
+            // 
+            this.Ggender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Ggender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ggender.FormattingEnabled = true;
+            this.Ggender.ItemHeight = 20;
+            this.Ggender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.Ggender.Location = new System.Drawing.Point(157, 41);
+            this.Ggender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Ggender.Name = "Ggender";
+            this.Ggender.Size = new System.Drawing.Size(157, 28);
+            this.Ggender.TabIndex = 27;
             // 
             // UpdateInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1077, 667);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.submit);
@@ -482,7 +505,8 @@
         private System.Windows.Forms.TextBox address;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox pGender;
-        private System.Windows.Forms.TextBox gender; // For Guardian Gender
+        private System.Windows.Forms.ComboBox pGender;
+        private System.Windows.Forms.ComboBox Ggender;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

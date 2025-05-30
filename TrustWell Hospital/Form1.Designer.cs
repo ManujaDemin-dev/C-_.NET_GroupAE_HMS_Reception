@@ -94,7 +94,7 @@
             this.cuiLabel1.BackColor = System.Drawing.Color.Transparent;
             this.cuiLabel1.Content = "TrustWell\\ Hospital";
             this.cuiLabel1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cuiLabel1.ForeColor = System.Drawing.Color.White;
+            this.cuiLabel1.ForeColor = System.Drawing.Color.Black;
             this.cuiLabel1.HorizontalAlignment = System.Drawing.StringAlignment.Center;
             this.cuiLabel1.Location = new System.Drawing.Point(1360, 13);
             this.cuiLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -111,7 +111,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(1432, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(275, 28);
@@ -124,7 +124,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(1435, 83);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(271, 28);
@@ -169,7 +169,7 @@
             this.button1.Location = new System.Drawing.Point(234, 473);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.button1.OnHoverBaseColor = System.Drawing.Color.Blue;
             this.button1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.button1.OnHoverForeColor = System.Drawing.Color.White;
             this.button1.OnHoverImage = null;
@@ -198,7 +198,7 @@
             this.textBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
             this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox2.FocusedBaseColor = System.Drawing.Color.White;
-            this.textBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.textBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.textBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBox2.Location = new System.Drawing.Point(221, 336);
@@ -219,7 +219,7 @@
             this.textBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
             this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox1.FocusedBaseColor = System.Drawing.Color.White;
-            this.textBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.textBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.textBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.textBox1.Location = new System.Drawing.Point(218, 270);
