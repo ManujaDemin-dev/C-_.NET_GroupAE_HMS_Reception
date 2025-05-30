@@ -93,6 +93,66 @@ namespace TrustWell_Hospital
 
         private void submit_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // --- Update Patient Table ---
+                string updatePatientQuery = @"
+            UPDATE Patients 
+            SET PatientName = @name, 
+                patientNIC = @nic, 
+                Gender = @gender, 
+                ContactNumber = @phone, 
+                Email = @email, 
+                Address = @address 
+            WHERE PatientID = @id";
+
+                MySqlParameter[] patientParams = {
+            new MySqlParameter("@name", pName.Text.Trim()),
+            new MySqlParameter("@nic", NIC.Text.Trim()),
+            new MySqlParameter("@gender", pGender.Text.Trim()),
+            new MySqlParameter("@phone", phone.Text.Trim()),
+            new MySqlParameter("@email", email.Text.Trim()),
+            new MySqlParameter("@address", address.Text.Trim()),
+            new MySqlParameter("@id", patientID)
+        };
+
+                Database.ExecuteNonQuery(updatePatientQuery, patientParams);
+
+                // --- Update Guardian Table ---
+                string updateGuardianQuery = @"
+            UPDATE EmergeencyContacts 
+            SET ContactName = @gname, 
+                Gender = @ggender, 
+                NIC = @gnic, 
+                Relationship = @relation, 
+                ContactNumber = @gcontact, 
+                Email = @gemail 
+            WHERE PatientID = @id";
+
+                MySqlParameter[] guardianParams = {
+            new MySqlParameter("@gname", gName.Text.Trim()),
+            new MySqlParameter("@ggender", gender.Text.Trim()),
+            new MySqlParameter("@gnic", gNIC.Text.Trim()),
+            new MySqlParameter("@relation", relation.Text.Trim()),
+            new MySqlParameter("@gcontact", contact.Text.Trim()),
+            new MySqlParameter("@gemail", gEmail.Text.Trim()),
+            new MySqlParameter("@id", patientID)
+        };
+
+                Database.ExecuteNonQuery(updateGuardianQuery, guardianParams);
+
+                // Success Message
+                MessageBox.Show("Information successfully updated!", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Update failed: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void pName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
-}
+    }

@@ -39,13 +39,13 @@ namespace TrustWell_Hospital
                 {
                     DataRow row = dt.Rows[0];
 
-                    lblName.Text = "Name: " + row["PatientName"].ToString();
-                    lblNIC.Text = "NIC: " + row["patientNIC"].ToString();
-                    lblGender.Text = "Gender: " + row["Gender"].ToString();
-                    lblDOB.Text = "DOB: " + Convert.ToDateTime(row["DateOfBirth"]).ToString("yyyy-MM-dd");
-                    lblContact.Text = "Phone: " + row["ContactNumber"].ToString();
-                    lblEmail.Text = "Email: " + row["Email"].ToString();
-                    lblAddress.Text = "Address: " + row["Address"].ToString();
+                    lblName.Text = "Name           : " + row["PatientName"].ToString();
+                    lblNIC.Text = "NIC        : " + row["patientNIC"].ToString();
+                    lblGender.Text = "Gender  : " + row["Gender"].ToString();
+                    lblDOB.Text = "DOB        : " + Convert.ToDateTime(row["DateOfBirth"]).ToString("yyyy-MM-dd");
+                    lblContact.Text = "Phone     : " + row["ContactNumber"].ToString();
+                    lblEmail.Text = "Email       : " + row["Email"].ToString();
+                    lblAddress.Text = "Address   : " + row["Address"].ToString();
                 }
 
             }catch (Exception ex)
@@ -68,12 +68,12 @@ namespace TrustWell_Hospital
                 {
                     DataRow row = guardianDt.Rows[0];
 
-                    label2.Text = "Guardian Name: " + row["ContactName"].ToString();
-                    label3.Text = "Gender: " + row["Gender"].ToString();
-                    label4.Text = "NIC: " + row["NIC"].ToString();
-                    label5.Text = "Relationship: " + row["Relationship"].ToString();
-                    label6.Text = "Contact No: " + row["ContactNumber"].ToString();
-                    label7.Text = "Email: " + row["Email"].ToString();
+                    label2.Text = "Guardian Name : " + row["ContactName"].ToString();
+                    label3.Text = "Gender           : " + row["Gender"].ToString();
+                    label4.Text = "NIC                 : " + row["NIC"].ToString();
+                    label5.Text = "Relationship  : " + row["Relationship"].ToString();
+                    label6.Text = "Contact No    : " + row["ContactNumber"].ToString();
+                    label7.Text = "Email                : " + row["Email"].ToString();
 
                 }
                 else
