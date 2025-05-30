@@ -94,6 +94,7 @@
             this.cuiLabel1.BackColor = System.Drawing.Color.Transparent;
             this.cuiLabel1.Content = "TrustWell\\ Hospital";
             this.cuiLabel1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cuiLabel1.ForeColor = System.Drawing.Color.White;
             this.cuiLabel1.HorizontalAlignment = System.Drawing.StringAlignment.Center;
             this.cuiLabel1.Location = new System.Drawing.Point(1360, 13);
             this.cuiLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -110,6 +111,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(1432, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(275, 28);
@@ -122,6 +124,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(1435, 83);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(271, 28);
@@ -140,7 +143,7 @@
             this.cuiPanel1.Controls.Add(this.label5);
             this.cuiPanel1.Controls.Add(this.label2);
             this.cuiPanel1.Controls.Add(this.label3);
-            this.cuiPanel1.Location = new System.Drawing.Point(685, 178);
+            this.cuiPanel1.Location = new System.Drawing.Point(866, 280);
             this.cuiPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cuiPanel1.Name = "cuiPanel1";
             this.cuiPanel1.OutlineThickness = 1F;
@@ -257,6 +260,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.cuiPanel1);
