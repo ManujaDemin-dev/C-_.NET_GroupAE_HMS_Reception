@@ -28,8 +28,9 @@ namespace TrustWell_Hospital
         private string RefNo;
         private string PatientMobile;
         private bool isDoctorAvailable = false;
+        private string PatientID;
 
-        public Schedule_doc(int doctorID,string docName,string spec, int fees,string patientname , string refno ,string patientmobile)
+        public Schedule_doc(int doctorID,string docName,string spec, int fees,string patientname , string refno ,string patientmobile , string patientid)
         {
             InitializeComponent();
             Docid = doctorID;
@@ -39,6 +40,7 @@ namespace TrustWell_Hospital
             PatientName = patientname;
             RefNo = refno;
             PatientMobile = patientmobile;
+            PatientID = patientid;
             HeaderLoad();
             AvalabilityData();
         }
@@ -112,10 +114,38 @@ namespace TrustWell_Hospital
         private void button3_Click(object sender, EventArgs e)
         {
             label17.Text = dateTimePicker1.Value.DayOfWeek.ToString();
-            doctorAppointmentdate = dateTimePicker1.Value.ToString();
+            doctorAppointmentdate = dateTimePicker1.Value.ToString("dddd, MMMM dd, yyyy");
+
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        { }
+           
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
         {
             string selectedDay = label17.Text;
 
@@ -123,7 +153,7 @@ namespace TrustWell_Hospital
             {
                 MessageBox.Show("Doctor is available on the selected date");
                 label18.Text = "Doctor is available on teh selected date";
-                isDoctorAvailable = true; 
+                isDoctorAvailable = true;
             }
             else
             {
@@ -131,11 +161,9 @@ namespace TrustWell_Hospital
                 label18.Text = "Doctor is not available.";
                 isDoctorAvailable = false;
             }
-
-
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_2(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(label17.Text))
             {
@@ -153,10 +181,9 @@ namespace TrustWell_Hospital
             string refNo = DateTime.Now.ToString("yyyyMMddHHmmss") + "_" + PatientName;
 
             // Proceed to bill
-            DocBillPrint popup = new DocBillPrint(Docid, DoctorName, Special, Fee, PatientName, refNo, PatientMobile, doctorAppointmentdate);
+            DocBillPrint popup = new DocBillPrint(Docid, DoctorName, Special, Fee, PatientName, refNo, PatientMobile, doctorAppointmentdate, PatientID);
             popup.StartPosition = FormStartPosition.CenterParent;
             popup.ShowDialog();
         }
-
     }
 }

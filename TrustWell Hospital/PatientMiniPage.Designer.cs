@@ -115,6 +115,11 @@
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(1249, 74);
+
+            this.gunaPanel1.Location = new System.Drawing.Point(-1, 2);
+            this.gunaPanel1.Name = "gunaPanel1";
+            this.gunaPanel1.Size = new System.Drawing.Size(1173, 74);
+
             this.gunaPanel1.TabIndex = 7;
             // 
             // label1
@@ -257,6 +262,7 @@
             this.MinimizeBox = false;
             this.Name = "PatientMiniPage";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
             this.Load += new System.EventHandler(this.PatientMiniPage_Load);

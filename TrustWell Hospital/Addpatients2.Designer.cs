@@ -41,8 +41,6 @@
             this.email = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dob = new System.Windows.Forms.DateTimePicker();
-            this.age = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.address = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -63,7 +61,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.submit = new Guna.UI.WinForms.GunaButton();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.age)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,8 +88,6 @@
             this.tableLayoutPanel1.Controls.Add(this.email, 6, 1);
             this.tableLayoutPanel1.Controls.Add(this.label5, 4, 2);
             this.tableLayoutPanel1.Controls.Add(this.dob, 6, 2);
-            this.tableLayoutPanel1.Controls.Add(this.age, 6, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.label13, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.address, 2, 4);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(74, 49);
@@ -118,7 +113,7 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
@@ -129,7 +124,7 @@
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.label7.Location = new System.Drawing.Point(454, 0);
             this.label7.Name = "label7";
@@ -149,7 +144,7 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.label4.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.label4.Location = new System.Drawing.Point(3, 38);
@@ -176,7 +171,7 @@
             // 
             // label8
             // 
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.label8.Location = new System.Drawing.Point(3, 76);
             this.label8.Name = "label8";
@@ -196,7 +191,7 @@
             // 
             // label9
             // 
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.label9.Location = new System.Drawing.Point(454, 38);
             this.label9.Name = "label9";
@@ -216,7 +211,7 @@
             // 
             // label5
             // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.label5.Location = new System.Drawing.Point(454, 76);
             this.label5.Name = "label5";
@@ -237,29 +232,9 @@
             this.dob.TabIndex = 8;
             this.dob.ValueChanged += new System.EventHandler(this.dob_ValueChanged);
             // 
-            // age
-            // 
-            this.age.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.age.Location = new System.Drawing.Point(592, 116);
-            this.age.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.age.Name = "age";
-            this.age.Size = new System.Drawing.Size(156, 26);
-            this.age.TabIndex = 11;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
-            this.label6.Location = new System.Drawing.Point(454, 114);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 20);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Age:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label13
             // 
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.label13.Location = new System.Drawing.Point(3, 114);
             this.label13.Name = "label13";
@@ -291,7 +266,7 @@
             // 
             // label17
             // 
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.label17.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.label17.Location = new System.Drawing.Point(3, 39);
@@ -318,7 +293,7 @@
             // 
             // label22
             // 
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.label22.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.label22.Location = new System.Drawing.Point(3, 78);
@@ -339,7 +314,7 @@
             // 
             // label20
             // 
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.label20.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.label20.Location = new System.Drawing.Point(478, 0);
@@ -371,7 +346,7 @@
             // 
             // label15
             // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.label15.Location = new System.Drawing.Point(3, 0);
             this.label15.Name = "label15";
@@ -435,7 +410,7 @@
             // 
             // label21
             // 
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.label21.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.label21.Location = new System.Drawing.Point(478, 39);
@@ -468,7 +443,7 @@
             // 
             // label16
             // 
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.label16.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.label16.Location = new System.Drawing.Point(478, 78);
@@ -503,6 +478,7 @@
             this.submit.TabIndex = 21;
             this.submit.Text = "Add patient";
             this.submit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.submit.Click += new System.EventHandler(this.submit_Click_1);
             // 
             // Addpatients2
             // 
@@ -519,7 +495,6 @@
             this.Load += new System.EventHandler(this.Addpatients2_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.age)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
@@ -542,8 +517,6 @@
         private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dob;
-        private System.Windows.Forms.NumericUpDown age;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox address;
         private System.Windows.Forms.Label label1;

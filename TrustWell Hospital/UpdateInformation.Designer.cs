@@ -170,7 +170,7 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 7;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.49782F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.6986899F));
@@ -350,6 +350,7 @@
             this.label13.Text = "Address:";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+
             // submit
             // 
             this.submit.AnimationHoverSpeed = 0.07F;
@@ -376,6 +377,34 @@
             this.submit.Text = "submit";
             this.submit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.submit.Click += new System.EventHandler(this.submit_Click);
+=======
+            // update
+            // 
+            this.update.AnimationHoverSpeed = 0.07F;
+            this.update.AnimationSpeed = 0.03F;
+            this.update.BackColor = System.Drawing.Color.Transparent;
+            this.update.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.update.BorderColor = System.Drawing.Color.Transparent;
+            this.update.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.update.FocusedColor = System.Drawing.Color.Empty;
+            this.update.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update.ForeColor = System.Drawing.Color.White;
+            this.update.Image = null;
+            this.update.ImageSize = new System.Drawing.Size(20, 20);
+            this.update.Location = new System.Drawing.Point(485, 520);
+            this.update.Name = "update";
+            this.update.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.update.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.update.OnHoverForeColor = System.Drawing.Color.White;
+            this.update.OnHoverImage = null;
+            this.update.OnPressedColor = System.Drawing.Color.Black;
+            this.update.Radius = 8;
+            this.update.Size = new System.Drawing.Size(160, 42);
+            this.update.TabIndex = 26;
+            this.update.Text = "UPDATE";
+            this.update.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.update.Click += new System.EventHandler(this.submit_Click);
+
             // 
             // address
             // 
