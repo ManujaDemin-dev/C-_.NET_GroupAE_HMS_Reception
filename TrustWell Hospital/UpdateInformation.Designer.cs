@@ -43,7 +43,6 @@
             this.gEmail = new System.Windows.Forms.TextBox();
             this.contact = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.gName = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -169,7 +168,7 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 7;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.49782F));
@@ -183,15 +182,14 @@
             this.tableLayoutPanel2.Controls.Add(this.gEmail, 6, 2);
             this.tableLayoutPanel2.Controls.Add(this.contact, 6, 1);
             this.tableLayoutPanel2.Controls.Add(this.label21, 4, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label19, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.gName, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.label16, 4, 2);
             this.tableLayoutPanel2.Controls.Add(this.label15, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label17, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label22, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.gNIC, 2, 2);
             this.tableLayoutPanel2.Controls.Add(this.label20, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.relation, 6, 0);
-            this.tableLayoutPanel2.Controls.Add(this.gNIC, 2, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(39, 442);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -240,18 +238,6 @@
             this.label21.TabIndex = 7;
             this.label21.Text = "Contact:";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label19
-            // 
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label19.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label19.Location = new System.Drawing.Point(150, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(1, 36);
-            this.label19.TabIndex = 10;
-            this.label19.Text = "Gender:";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // gName
             // 
@@ -350,7 +336,6 @@
             this.label13.Text = "Address:";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-
             // submit
             // 
             this.submit.AnimationHoverSpeed = 0.07F;
@@ -377,33 +362,6 @@
             this.submit.Text = "submit";
             this.submit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.submit.Click += new System.EventHandler(this.submit_Click);
-            // update
-            // 
-            this.update.AnimationHoverSpeed = 0.07F;
-            this.update.AnimationSpeed = 0.03F;
-            this.update.BackColor = System.Drawing.Color.Transparent;
-            this.update.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
-            this.update.BorderColor = System.Drawing.Color.Transparent;
-            this.update.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.update.FocusedColor = System.Drawing.Color.Empty;
-            this.update.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.update.ForeColor = System.Drawing.Color.White;
-            this.update.Image = null;
-            this.update.ImageSize = new System.Drawing.Size(20, 20);
-            this.update.Location = new System.Drawing.Point(485, 520);
-            this.update.Name = "update";
-            this.update.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.update.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.update.OnHoverForeColor = System.Drawing.Color.White;
-            this.update.OnHoverImage = null;
-            this.update.OnPressedColor = System.Drawing.Color.Black;
-            this.update.Radius = 8;
-            this.update.Size = new System.Drawing.Size(160, 42);
-            this.update.TabIndex = 26;
-            this.update.Text = "UPDATE";
-            this.update.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.update.Click += new System.EventHandler(this.submit_Click);
-
             // 
             // address
             // 
@@ -428,7 +386,7 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 7;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.39158F));
@@ -495,7 +453,7 @@
 
         }
 
-    
+        #endregion
 
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox phone;
@@ -511,7 +469,6 @@
         private System.Windows.Forms.TextBox gEmail;
         private System.Windows.Forms.TextBox contact;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox gName;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
@@ -525,7 +482,7 @@
         private System.Windows.Forms.TextBox address;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox gender;
         private System.Windows.Forms.TextBox pGender;
+        private System.Windows.Forms.TextBox gender; // For Guardian Gender
     }
 }
