@@ -119,5 +119,16 @@ namespace TrustWell_Hospital
         {
             LoadUserControl(new Appoinmentscs());
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Are you sure you want to logout?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                Form1 login = new Form1();
+                login.Show();
+            }
+        }
     }
 }

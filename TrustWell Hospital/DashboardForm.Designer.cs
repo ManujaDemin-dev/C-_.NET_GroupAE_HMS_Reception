@@ -75,7 +75,7 @@
             this.button1.AnimationHoverSpeed = 0.07F;
             this.button1.AnimationSpeed = 0.03F;
             this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BaseColor = System.Drawing.Color.Red;
+            this.button1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(41)))), ((int)(((byte)(64)))));
             this.button1.BorderColor = System.Drawing.Color.Transparent;
             this.button1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -86,15 +86,16 @@
             this.button1.ImageSize = new System.Drawing.Size(20, 20);
             this.button1.Location = new System.Drawing.Point(0, 957);
             this.button1.Name = "button1";
-            this.button1.OnHoverBaseColor = System.Drawing.Color.Blue;
+            this.button1.OnHoverBaseColor = System.Drawing.Color.White;
             this.button1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.button1.OnHoverForeColor = System.Drawing.Color.White;
+            this.button1.OnHoverForeColor = System.Drawing.Color.Black;
             this.button1.OnHoverImage = null;
             this.button1.OnPressedColor = System.Drawing.Color.Black;
             this.button1.Size = new System.Drawing.Size(276, 76);
             this.button1.TabIndex = 4;
             this.button1.Text = "Log Out";
             this.button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button3
             // 
