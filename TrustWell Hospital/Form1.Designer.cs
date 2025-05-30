@@ -91,6 +91,7 @@
             // 
             // cuiLabel1
             // 
+            this.cuiLabel1.AutoSize = true;
             this.cuiLabel1.BackColor = System.Drawing.Color.Transparent;
             this.cuiLabel1.Content = "TrustWell\\ Hospital";
             this.cuiLabel1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
