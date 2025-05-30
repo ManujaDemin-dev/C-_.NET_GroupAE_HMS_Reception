@@ -46,6 +46,7 @@ namespace TrustWell_Hospital
         {
            
             this.label11.Text = $"Welcome, {UserSession.Username}";
+            LoadUserControl(new doctors());
 
 
         }
