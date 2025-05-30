@@ -170,7 +170,7 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            System.Windows.Forms.AnchorStyles.Right)));
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 7;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.49782F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.6986899F));
@@ -377,7 +377,6 @@
             this.submit.Text = "submit";
             this.submit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.submit.Click += new System.EventHandler(this.submit_Click);
-=======
             // update
             // 
             this.update.AnimationHoverSpeed = 0.07F;
@@ -496,7 +495,7 @@
 
         }
 
-        #endregion
+    
 
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox phone;
