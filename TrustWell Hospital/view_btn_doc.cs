@@ -30,7 +30,7 @@ namespace TrustWell_Hospital
                 DataRow row = dt.Rows[0];
                 label2.Text = "Doctor Name: " + row["DoctorName"].ToString();
                 label6.Text = "Specialization :" + row["Specialization"].ToString();
-                label5.Text = "Doctor Id :" + row["DoctorID"].ToString();
+                //label5.Text = "Doctor Id :" + row["DoctorID"].ToString();
                 label4.Text = "Contact Infomation :" + row["ContactNumber"].ToString();
                 label3.Text = "Doctor Fees :" + row["Fees"].ToString();
                 label7.Text = "Availability :" + row["available_days"].ToString();
