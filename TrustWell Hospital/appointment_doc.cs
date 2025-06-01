@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using WindowsFormsApp1;
 
 namespace TrustWell_Hospital
@@ -36,12 +37,7 @@ namespace TrustWell_Hospital
 
         private void LoadPatients(string name = "", string mobile = "")
         {
-            string query = "SELECT PatientID, PatientName, patientNIC, ContactNumber FROM Patients WHERE 1=1";
-
-            var parameters = new List<MySqlParameter>();
-
-
-            DataTable dt = Database.ExecuteQuery(query, parameters.ToArray());
+            DataTable dt = publicfunctions.GetPatients(name, mobile);
 
             gunaDataGridViewPatients.DataSource = dt;
 
@@ -81,7 +77,14 @@ namespace TrustWell_Hospital
                 Schedule_doc popup = new Schedule_doc(doctorid,doctorName,special,fees,PatientName,PatientName+doctorName,Contact , Patientid);
                 popup.StartPosition = FormStartPosition.CenterParent;
                 popup.ShowDialog();
+                this.Close();
             }
+            
+        }
+
+        private void btnsearch_MouseClick(object sender, MouseEventArgs e)
+        {
+            LoadPatients(txtname.Text.Trim(), gunaTextBox1.Text.Trim());
         }
     }
 }

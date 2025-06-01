@@ -26,7 +26,7 @@ namespace TrustWell_Hospital
         private decimal total = 0;
         private String Date;
         private List<(int TestID, string TestName, decimal TestPrice)> cart;
-        private string testIDsCsv;
+       
 
         public Labbill1(List<(int TestID, string TestName, decimal TestPrice)> selectedTests, string patientName, string referenceNo, string contactNumber, int patientID)
         {
@@ -96,14 +96,13 @@ namespace TrustWell_Hospital
                 try
                 {
                     // Insert one billing record with all TestIDs as CSV
-                    string billingQuery = "INSERT INTO Billing (ReferenceNum, PatientID, StaffID, TestType, TotalAmount, PaymentStatus, PaymentMethod, BillingDate, CreatedAt) " +
-                                          "VALUES (@ReferenceNum, @PatientId, @staffid, @testtype, @totalAmount, 'Pending', 'Cash', @BillingDate, NOW())";
+                    string billingQuery = "INSERT INTO Billing (ReferenceNum, PatientID, StaffID, TotalAmount, PaymentStatus, PaymentMethod, BillingDate, CreatedAt) " +
+                                          "VALUES (@ReferenceNum, @PatientId, @staffid, @totalAmount, 'Pending', 'Cash', @BillingDate, NOW())";
 
                     MySqlParameter[] billingParams = {
                     new MySqlParameter("@ReferenceNum", referenceNo),
                     new MySqlParameter("@PatientId", patientID),
                     new MySqlParameter("@staffid", UserSession.StaffId),
-                    new MySqlParameter("@testtype",testIDsCsv), // Insert all TestIDs as CSV
                     new MySqlParameter("@totalAmount", total),
                     new MySqlParameter("@BillingDate", Date),
                 };

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.cuiPanel2 = new CuoreUI.Controls.cuiPanel();
             this.textBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.button1 = new Guna.UI.WinForms.GunaButton();
@@ -37,11 +39,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.cuiPanel2.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.cuiPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,6 +54,30 @@
             this.panel1.Size = new System.Drawing.Size(1589, 802);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.panel2.Controls.Add(this.gunaLabel1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1589, 65);
+            this.panel2.TabIndex = 14;
+            this.panel2.TabStop = true;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel1.Location = new System.Drawing.Point(549, 10);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(342, 46);
+            this.gunaLabel1.TabIndex = 12;
+            this.gunaLabel1.Text = "Patient Registration";
+            this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // cuiPanel2
             // 
@@ -184,30 +208,6 @@
             this.label4.Text = "Enter Patient details for check  patient is already registerd.";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel1.Location = new System.Drawing.Point(550, 18);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(342, 46);
-            this.gunaLabel1.TabIndex = 12;
-            this.gunaLabel1.Text = "Patient Registration";
-            this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
-            this.panel2.Controls.Add(this.gunaLabel1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1589, 90);
-            this.panel2.TabIndex = 14;
-            this.panel2.TabStop = true;
-            // 
             // Addpatient1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -217,10 +217,10 @@
             this.Size = new System.Drawing.Size(1589, 805);
             this.Load += new System.EventHandler(this.Addpatient1_Load);
             this.panel1.ResumeLayout(false);
-            this.cuiPanel2.ResumeLayout(false);
-            this.cuiPanel2.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.cuiPanel2.ResumeLayout(false);
+            this.cuiPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
