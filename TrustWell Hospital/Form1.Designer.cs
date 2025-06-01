@@ -206,7 +206,7 @@
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Padding = new System.Windows.Forms.Padding(5, 2, 5, 2);
-            this.textBox2.PasswordChar = '\0';
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Radius = 12;
             this.textBox2.SelectedText = "";
             this.textBox2.Size = new System.Drawing.Size(351, 45);

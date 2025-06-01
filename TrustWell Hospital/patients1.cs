@@ -33,28 +33,11 @@ namespace TrustWell_Hospital
 
         public void LoadPatients(string name = "", string mobile = "")
         {
-            string query = "SELECT PatientID, PatientName, patientNIC, ContactNumber FROM Patients WHERE 1=1";
+            DataTable dt = publicfunctions.GetPatients(name, mobile);
+            dataGridViewPatients.DataSource = dt;
 
-            var parameters = new List<MySqlParameter>();
-
-            if (!string.IsNullOrWhiteSpace(name))
-            {
-                query += " AND (PatientName LIKE @name OR patientNIC  LIKE @name)";
-                parameters.Add(new MySqlParameter("@name", "%" + name + "%"));
-                //parameters.Add(new MySqlParameter("@nic", "%" +  + "%"));
-            }
-
-            if (!string.IsNullOrWhiteSpace(mobile))
-            {
-                query += " AND (ContactNumber LIKE @mobile OR patientNIC LIKE @nic";
-                parameters.Add(new MySqlParameter("@mobile", "%" + mobile + "%"));
-               
-            }
             
 
-            DataTable dt = Database.ExecuteQuery(query, parameters.ToArray());
-
-            dataGridViewPatients.DataSource = dt;
             if (dataGridViewPatients.Columns.Contains("PatientID"))
                 dataGridViewPatients.Columns["PatientID"].Visible = false;
 

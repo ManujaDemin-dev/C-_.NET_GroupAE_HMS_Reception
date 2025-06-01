@@ -13,12 +13,12 @@ namespace TrustWell_Hospital
 {
     public partial class DashboardForm: Form
     {
-        private DateTimeDisplay dateTimeDisplay;
+        DateTimeUpdater dateTime1 = new DateTimeUpdater();
 
         public DashboardForm()
         {
             InitializeComponent();
-            dateTimeDisplay = new DateTimeDisplay(label1, label2);
+           
             this.Doctors.Click += new System.EventHandler(this.Doctors_Click);
             this.button5.Click += new System.EventHandler(this.button5_Click);
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -48,7 +48,7 @@ namespace TrustWell_Hospital
             this.label11.Text = $"Welcome, {UserSession.Username}";
             LoadUserControl(new doctors());
 
-
+            dateTime1.StartDateTimeClock(label1, label2);
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

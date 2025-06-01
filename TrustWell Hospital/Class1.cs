@@ -12,29 +12,21 @@ namespace TrustWell_Hospital
     {
     }
 
-    public class DateTimeDisplay
+    public class DateTimeUpdater
     {
-        private Label labelDate;
-        private Label labelTime;
         private Timer timer;
 
-        public DateTimeDisplay(Label dateLabel, Label timeLabel)
+        public void StartDateTimeClock(Label Time ,Label Date)
         {
-            labelDate = dateLabel;
-            labelTime = timeLabel;
-
             timer = new Timer();
-            timer.Interval = 1000; 
-            timer.Tick += UpdateDateTime;
+            timer.Interval = 1000;
+            timer.Tick += (s, e) =>
+            {
+                Time.Text = DateTime.Now.ToString("HH:mm:ss");
+                Date.Text = DateTime.Now.ToString("yyyy-MM-dd");
+               
+            };
             timer.Start();
-
-            UpdateDateTime(null, null); 
-        }
-
-        private void UpdateDateTime(object sender, EventArgs e)
-        {
-            labelDate.Text = DateTime.Now.ToString("dd MMMM yyyy");
-            labelTime.Text = DateTime.Now.ToString("hh:mm tt");
         }
     }
 
