@@ -114,7 +114,7 @@ namespace TrustWell_Hospital
         private void button3_Click(object sender, EventArgs e)
         {
             label17.Text = dateTimePicker1.Value.DayOfWeek.ToString();
-            doctorAppointmentdate = dateTimePicker1.Value.ToString("dddd, MMMM dd, yyyy");
+            doctorAppointmentdate = dateTimePicker1.Value.ToString("dddd, MMMM d, yyyy");
 
         }
 
@@ -152,7 +152,7 @@ namespace TrustWell_Hospital
             if (docDay.Contains(selectedDay))
             {
                 MessageBox.Show("Doctor is available on the selected date");
-                label18.Text = "Doctor is available on teh selected date";
+                label18.Text = "Doctor is available on the selected date";
                 isDoctorAvailable = true;
             }
             else
